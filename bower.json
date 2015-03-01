@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "ko-grid-examples",
+  "description": "Example pages for the ko-grid and its extensions.",
+  "authors": ["Ben Schulz (https://github.com/benschulz)"],
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/benschulz/indexed-list.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/benschulz/ko-grid-examples.git"
+  },
+  "dependencies": {
+    "knockout": "^3.0.0",
+    "ko-grid-bundle": "benschulz/ko-grid-bundle",
+    "requirejs": "^2.1.16",
+    "moment": "^2.0.0",
+    "normalize-css": "^3.0.2",
+    "requirejs-plugins": "^1.0.3"
+  }
+}

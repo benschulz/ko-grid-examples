@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Aggregation &mdash; Examples &mdash; ko-grid</title>
+
+    <script type="text/javascript" src="../../require.js"></script>
+    <script type="text/javascript" src="../../ko-grid-examples.js"></script>
+    <link rel="stylesheet" href="../../ko-grid-examples.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-tweaks.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
+</head>
+<body data-bind="koGridExample: '../../'">
+<h1>Aggregation</h1>
+
+<p>
+    The aggregation extension calculates various aggregate values and displays them in the table footer. Supported
+    aggregates are the sum, the average as well as the minimum and maximum value.
+</p>
+
+<div data-bind="koGridExampleCranks: []"></div>
+
+<h2>Example: Countries and dependencies by population</h2>
+
+<div id="sample" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'ko-grid-sample-config',
+    dataSource: countriesByPopulation(),
+    primaryKey: 'id',
+    columns: [
+        { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)\u202A' },
+        { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
+        { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
+        { id: 'date', width: '150px', label: 'Date' }
+    ],
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }],
+    extensions: {
+        aggregate: [
+            { population: 'sum', percentage: 'sum' },
+            { population: 'minimum' },
+            { population: 'average', percentage: 'average' },
+            { population: 'maximum' }
+        ],
+        links: { country: { uri: 'countryArticle' } }
+    }
+}">
+</div>
+
+<dl>
+    <dt>Source</dt>
+    <dd>
+        <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
+    </dd>
+</dl>
+
+<h2>Example configuration</h2>
+
+<pre><code><div class="line"><span class="source js"><span>aggregate</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;population</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>sum</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;percentage</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>sum</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;population</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>minimum</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;population</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>average</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;percentage</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>average</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;population</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>maximum</span><span class="punctuation definition string end js"><span>&#39;</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></code></pre>
+</body>
+</html>

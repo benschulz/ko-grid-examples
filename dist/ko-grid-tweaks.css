@@ -1,0 +1,17 @@
+.numeric.ko-grid-cell {
+  text-align: right;
+}
+.standard-grid {
+  display: inline-block;
+  height: 500px;
+}
+.auto-height.grid {
+  display: inline-block;
+}
+.variable-width.grid {
+  height: 500px;
+}
+.content-width.grid {
+  display: inline-block;
+  height: 500px;
+}
