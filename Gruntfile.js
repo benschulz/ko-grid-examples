@@ -10,6 +10,63 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
 
+    var configModules = function () {
+        return determineConfigPackages().map(function (p) { return p.name; });
+    };
+
+    var packages = function () {
+        return determineConfigPackages()
+            .concat([{
+                name: 'ko-grid-examples',
+                location: 'src',
+                main: 'bootstrap'
+            }]);
+    };
+
+    var paths = {
+        // plugins
+        'text': 'node_modules/requirejs-plugins/lib/text',
+        'json': 'node_modules/requirejs-plugins/src/json',
+        // examples specific dependencies
+        'domReady': 'node_modules/domReady/domReady',
+        'moment': 'bower_components/moment/moment',
+        // polyfills for required functionality
+        'es6-promise': 'bower_components/es6-promise/promise.min', // IE10: Promise
+        // ko-grid dependencies
+        'knockout': 'bower_components/knockout/dist/knockout',
+        // ko-grid
+        'ko-grid-bundle': 'bower_components/ko-grid-bundle/dist/ko-grid-bundle.debug',
+        'ko-grid': 'empty:', // included in ko-grid-bundle
+        'ko-data-source': 'empty:' // included in ko-grid-bundle
+    };
+
+    grunt.registerTask('generate-rjs-config', function () {
+        mkdirp.sync('dist');
+
+        var bundlePackages = JSON.parse(fs.readFileSync('bower_components/ko-grid-bundle/build/packages.json'));
+
+        var devPackages = packages()
+            .concat(Object.keys(bundlePackages).map(function (p) {
+                return {
+                    name: p,
+                    location: path.join('bower_components/ko-grid-bundle', path.dirname(bundlePackages[p])),
+                    main: path.basename(bundlePackages[p])
+                };
+            }));
+
+        fs.writeFileSync('dist/rjsconfig.js', [
+            'require.config({',
+            '  baseUrl: (function(s) { return s.substring(0, s.length - 12) + \'../\'; })(document.querySelector(\'script[src$="rjsconfig.js"]\').src),',
+            '  paths: ' + JSON.stringify(paths, null, '  ') + ',',
+            '  map: { \'*\': { \'req\': \'require\' } },',
+            '  packages: ' + JSON.stringify(devPackages, null, '  '),
+            '});',
+            '',
+            'require([\'ko-grid-examples\']);',
+            ''
+        ].join('\n'));
+    });
+
     grunt.registerTask('generate-examples', function (mode) {
         var sourceDirectory = 'src/examples';
         var destinationDirectory = 'dist/examples';
@@ -36,7 +93,7 @@ module.exports = function (grunt) {
         var orderFile = path.join(directory, 'order.json');
         var order = fs.existsSync(orderFile) ? JSON.parse(fs.readFileSync(orderFile, 'utf8')) : [];
 
-        copy.sort(function (a, b) { // preserve order
+        copy.sort(function (a, b) {
             var aIndex = order.indexOf(a),
                 bIndex = order.indexOf(b),
                 lastIndex = order.length;
@@ -47,13 +104,12 @@ module.exports = function (grunt) {
     }
 
     function generateExampleCategory(sourceDirectory, destinationDirectory, depth, mode) {
+        var dev = mode === 'development';
         var examples = [];
 
         var filenames = order(sourceDirectory, glob.sync(path.join(sourceDirectory, '*.html'))
             .filter(function (p) { return fs.statSync(p).isFile(); })
             .map(path.basename));
-
-        grunt.verbose.writeln('XXX: ' + filenames.join(', '));
 
         mkdirp.sync(destinationDirectory);
         return filenames.map(function (filename) {
@@ -82,9 +138,8 @@ module.exports = function (grunt) {
                     '<head lang="en">',
                     '    <meta charset="UTF-8">',
                     '    <title>' + expectedTitle + '</title>',
-                    '',
                     '    <script type="text/javascript" src="' + repeat('../', depth) + 'require.js"></script>',
-                    '    <script type="text/javascript" src="' + repeat('../', depth) + 'ko-grid-examples.js"></script>',
+                    '    <script type="text/javascript" src="' + repeat('../', depth) + (dev ? 'rjsconfig.js' : 'ko-grid-examples.js') + '"></script>',
                     '    <link rel="stylesheet" href="' + repeat('../', depth) + 'ko-grid-examples.css">',
                     '    <link class="ko-grid-styles" rel="stylesheet" href="' + repeat('../', depth) + 'ko-grid-tweaks.css">',
                     '    <link class="ko-grid-styles" rel="stylesheet" href="' + repeat('../', depth) + 'ko-grid-bundle.css">',
@@ -118,7 +173,7 @@ module.exports = function (grunt) {
                 return openingTag + highlighted + '</code>';
             });
 
-            if (mode === 'development')
+            if (dev)
                 content = content.replace(/<\/body>/i, '<script type="text/javascript" src="//localhost:35729/livereload.js"></script>\n</body>');
 
             fs.writeFileSync(path.join(destinationDirectory, filename), content);
@@ -135,7 +190,7 @@ module.exports = function (grunt) {
         fs.writeFileSync('dist/index.html', content.replace(/("|')\.\.\//g, function (match, quote) { return quote; }));
     });
 
-    grunt.registerTask('default', ['bower:install', 'generate-examples:development', 'generate-index', 'copy', 'less', 'requirejs', 'watch']);
+    grunt.registerTask('default', ['bower:install', 'generate-rjs-config', 'generate-examples:development', 'generate-index', 'copy', 'less', 'requirejs', 'watch']);
     grunt.registerTask('build', ['bower:install', 'generate-examples', 'generate-index', 'copy', 'less', 'requirejs']);
 
     grunt.initConfig({
@@ -177,24 +232,11 @@ module.exports = function (grunt) {
                     baseUrl: '.',
                     name: 'ko-grid-examples',
                     out: 'dist/ko-grid-examples.js',
-                    include: ['ko-grid-sample-config'],
-                    insertRequire: ['ko-grid-sample-config'],
+                    include: configModules(),
+                    insertRequire: configModules(),
                     stubModules: ['text', 'json'],
-                    paths: {
-                        text: 'node_modules/requirejs-plugins/lib/text',
-                        json: 'node_modules/requirejs-plugins/src/json',
-                        knockout: 'bower_components/knockout/dist/knockout',
-                        'ko-grid-sample-config': 'src/configs/ko-grid-sample-config',
-                        'ko-grid-bundle': 'bower_components/ko-grid-bundle/dist/ko-grid-bundle',
-                        'ko-grid': 'empty:',
-                        'ko-data-source': 'empty:',
-                        moment: 'bower_components/moment/moment'
-                    },
-                    packages: [{
-                        name: 'ko-grid-examples',
-                        location: 'src',
-                        main: 'bootstrap'
-                    }],
+                    paths: paths,
+                    packages: packages(),
                     optimize: 'none',
                     normalizeDirDefines: 'all',
                     wrap: {
@@ -206,9 +248,24 @@ module.exports = function (grunt) {
         },
         watch: {
             options: {livereload: true},
+            configs: {files: ['src/configs/**/*.js'], tasks: ['generate-rjs-config']},
             js: {files: ['src/**/*.js'], tasks: ['requirejs']},
             examples: {files: ['src/examples/**'], tasks: ['generate-examples:development', 'generate-index']},
             less: {files: ['src/**/*.less'], tasks: ['less']}
         }
     });
+
+    function determineConfigPackages() {
+        return glob.sync('src/configs/**/*-config.js').map(function (c) {
+            return {
+                name: path.basename(c, '.js'),
+                location: path.dirname(c),
+                main: path.basename(c, '.js')
+            };
+        }).concat([{
+            name: 'configs/config-factory',
+            location: 'src/configs',
+            main: 'config-factory'
+        }]);
+    }
 };
