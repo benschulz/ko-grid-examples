@@ -2,12 +2,10 @@
   "private": true,
   "name": "ko-grid-examples",
   "description": "Example pages for the ko-grid and its extensions.",
-  "authors": ["Ben Schulz (https://github.com/benschulz)"],
+  "authors": [
+    "Ben Schulz (https://github.com/benschulz)"
+  ],
   "license": "BSD-3-Clause",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/benschulz/indexed-list.git"
-  },
   "repository": {
     "type": "git",
     "url": "http://github.com/benschulz/ko-grid-examples.git"
