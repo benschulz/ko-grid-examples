@@ -100,8 +100,8 @@ define(['knockout', 'json!dist/examples/examples.json'], function (ko, examples)
                     if (checkbox.checked)
                         document.head.removeChild(e);
                     else
-                        document.head.appendChild(e)
-                })
+                        document.head.appendChild(e);
+                });
             });
         },
         'fixed-height': function (element) {
@@ -119,6 +119,14 @@ define(['knockout', 'json!dist/examples/examples.json'], function (ko, examples)
                     document.querySelector('.grid').classList.add('fixed-height');
                 else
                     document.querySelector('.grid').classList.remove('fixed-height');
+            });
+        },
+        'relayout': function (element) {
+            var button = createElement('button', 'Recalculate Layout');
+            element.appendChild(button);
+
+            button.addEventListener('click', function () {
+                ko.contextFor(document.querySelector('.ko-grid')).grid.layout.recalculate();
             });
         }
     };
