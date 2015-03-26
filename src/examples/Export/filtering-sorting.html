@@ -1,18 +1,15 @@
-<h1>Container Width</h1>
+<h1>Filtering/Sorting</h1>
 
 <p>
-    When there are many or very wide columns, the available horizontal space might not suffice to display all
-    columns at the same time. In such cases a grid style of <code>display: block</code> (the default) will make
-    sure the grid gets all the available horizontal space. When that is not sufficient, the table body will
-    become scrollable.
+    If the grid's data is filtered or sorted, this will be reflected in the produced export.
 </p>
 
 <div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="container-width" class="fixed-height variable-width grid" data-bind="grid: {
-    config: 'default-config',
+<div id="export-filtering-sorting" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'export-filtering-sorting-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [

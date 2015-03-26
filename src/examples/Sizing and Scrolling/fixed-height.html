@@ -1,17 +1,22 @@
-<h1>Container Width</h1>
+<h1>Fixed Height</h1>
 
 <p>
-    When there are many or very wide columns, the available horizontal space might not suffice to display all
-    columns at the same time. In such cases a grid style of <code>display: block</code> (the default) will make
-    sure the grid gets all the available horizontal space. When that is not sufficient, the table body will
+    If you want to limit the grid's vertical size, you can specify a height for it. Any height value is allowed &ndash;
+    absolute as well as relative values are supported. If the space is not sufficient to fit the data, the table body will
     become scrollable.
 </p>
 
-<div data-bind="koGridExampleCranks: []"></div>
+<p>
+    <strong>Note</strong>: Don't forget to add the class <code>fixed-height</code> to your grid, if you want to specify a
+    fixed height. Otherwise your browser will display a horizontal scroller to make up for the space taken by the vertical
+    one.
+</p>
+
+<div data-bind="koGridExampleCranks: ['fixed-height']"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="container-width" class="fixed-height variable-width grid" data-bind="grid: {
+<div id="fixed-height" class="fixed-height content-width grid" data-bind="grid: {
     config: 'default-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',

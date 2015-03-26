@@ -1,18 +1,22 @@
-<h1>Container Width</h1>
+<h1>Resize Detection</h1>
 
 <p>
-    When there are many or very wide columns, the available horizontal space might not suffice to display all
-    columns at the same time. In such cases a grid style of <code>display: block</code> (the default) will make
-    sure the grid gets all the available horizontal space. When that is not sufficient, the table body will
-    become scrollable.
+    The <a href="https://github.com/benschulz/ko-grid-resize-detection">resize detection extension</a> asks the grid
+    to recalculate its layout whenever the resize of a container is detected. Beyond regular view port resizes,
+    jQuery
+</p>
+
+<p>
+    <strong>Note</strong>: At the moment the extension only detects size changes of the view port and of jQuery UI's resizables. If you feel
+    there is another widget deserving of support, feel free to file a feature request.
 </p>
 
 <div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="container-width" class="fixed-height variable-width grid" data-bind="grid: {
-    config: 'default-config',
+<div id="column-scaling-resize-detection" class="fixed-height variable-width grid" data-bind="grid: {
+    config: 'column-scaling-resize-detection-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [

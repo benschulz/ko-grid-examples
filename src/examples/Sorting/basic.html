@@ -1,18 +1,17 @@
-<h1>Container Width</h1>
+<h1>Basic Functionality</h1>
 
 <p>
-    When there are many or very wide columns, the available horizontal space might not suffice to display all
-    columns at the same time. In such cases a grid style of <code>display: block</code> (the default) will make
-    sure the grid gets all the available horizontal space. When that is not sufficient, the table body will
-    become scrollable.
+    The <a href="https://github.com/benschulz/ko-grid-sorting">sorting extension</a> lets the user sort by the
+    data set by a specific column. To do that, simply click on the corresponding column header. Click again,
+    to toggle the sorting direction.
 </p>
 
 <div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="container-width" class="fixed-height variable-width grid" data-bind="grid: {
-    config: 'default-config',
+<div id="sorting-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'sorting-basic-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [

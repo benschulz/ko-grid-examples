@@ -1,18 +1,16 @@
-<h1>Container Width</h1>
+<h1>Basic Functionality</h1>
 
 <p>
-    When there are many or very wide columns, the available horizontal space might not suffice to display all
-    columns at the same time. In such cases a grid style of <code>display: block</code> (the default) will make
-    sure the grid gets all the available horizontal space. When that is not sufficient, the table body will
-    become scrollable.
+    The <a href="https://github.com/benschulz/ko-grid-full-screen">full screen extension</a> adds a toggle button to the grid toolbar.
+    When switched into full screen mode, the grid takes up the entire view port.
 </p>
 
 <div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="container-width" class="fixed-height variable-width grid" data-bind="grid: {
-    config: 'default-config',
+<div id="full-screen-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'full-screen-basic-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [

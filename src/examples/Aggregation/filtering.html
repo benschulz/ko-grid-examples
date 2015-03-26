@@ -1,21 +1,20 @@
-<h1>Aggregation</h1>
+<h1>Filtering</h1>
 
 <p>
-    The aggregation extension calculates various aggregate values and displays them in the table footer. Supported
-    aggregates are the sum, the average as well as the minimum and maximum value.
+    When the underlying data set is filtered, the aggregation extension automatically triggers a recalculation.
 </p>
 
 <div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="sample" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'ko-grid-sample-config',
+<div id="aggregation-filtering" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'aggregation-filtering-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [
         { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
-        { id: 'country', width: '400px', label: 'Country (or dependent territory)\u202A' },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
         { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
         { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
         { id: 'date', width: '150px', label: 'Date' }
@@ -27,8 +26,7 @@
             { population: 'minimum' },
             { population: 'average', percentage: 'average' },
             { population: 'maximum' }
-        ],
-        links: { country: { uri: 'countryArticle' } }
+        ]
     }
 }">
 </div>
@@ -43,10 +41,10 @@
 <h2>Example configuration</h2>
 
 <pre><code>
-aggregate: [
+    aggregate: [
     { population: 'sum', percentage: 'sum' },
     { population: 'minimum' },
     { population: 'average', percentage: 'average' },
     { population: 'maximum' }
-]
+    ]
 </code></pre>

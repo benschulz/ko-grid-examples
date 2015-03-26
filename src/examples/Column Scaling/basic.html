@@ -1,18 +1,22 @@
-<h1>Container Width</h1>
+<h1>Basic Functionality</h1>
 
 <p>
-    When there are many or very wide columns, the available horizontal space might not suffice to display all
-    columns at the same time. In such cases a grid style of <code>display: block</code> (the default) will make
-    sure the grid gets all the available horizontal space. When that is not sufficient, the table body will
-    become scrollable.
+    The <a href="https://github.com/benschulz/ko-grid-column-scaling">column scaling extension</a> scales column widths
+    so they take up all the available horizontal space.
 </p>
 
-<div data-bind="koGridExampleCranks: []"></div>
+<p>
+    <strong>Note</strong>: The columns are rescaled whenever the grid's layout is recalculated. By default this never
+    happens, except when extensions trigger a relayout. If you embed a grid into a resizable container you need some
+    form of <a href="./resize-detection.html">resize detection</a> to keep rescaling columns as the grid is resized.
+</p>
+
+<div data-bind="koGridExampleCranks: ['relayout']"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="container-width" class="fixed-height variable-width grid" data-bind="grid: {
-    config: 'default-config',
+<div id="column-scaling-basic" class="fixed-height variable-width grid" data-bind="grid: {
+    config: 'column-scaling-basic-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [

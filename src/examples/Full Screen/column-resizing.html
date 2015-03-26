@@ -1,0 +1,45 @@
+<h1>Column Resizing</h1>
+
+<p>
+    Naturally, the full screen extension can be combined with column resizing. However, what happens when you
+    toggle full screen mode on and off? Just what the user would expect: The grid keeps track of column widths
+    in and out of full screen mode separately. Each time it is toggled, the previously configured value is
+    restored.
+</p>
+
+<p>
+    <strong>Note</strong>: These column widths are stored in <code>localStorage</code> under the grid's id. In
+    other words, the column widths are remembered across page reloads and sessions.
+</p>
+
+<p class="known-issue">
+    <strong>Known Issue</strong>: Entering full screen mode does not always work properly in WebKit and Blink based browsers.
+    You can still see the expected result by resizing the window/view port. This issue is tracked on
+    <a href="https://github.com/benschulz/ko-grid-full-screen/issues/1">github</a>.
+</p>
+
+<div data-bind="koGridExampleCranks: []"></div>
+
+<h2>Example: Countries and dependencies by population</h2>
+
+<div id="full-screen-column-resizing" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'full-screen-column-resizing-config',
+    dataSource: countriesByPopulation(),
+    primaryKey: 'id',
+    columns: [
+        { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
+        { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
+        { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
+        { id: 'date', width: '150px', label: 'Date' }
+    ],
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }]
+}">
+</div>
+
+<dl>
+    <dt>Source</dt>
+    <dd>
+        <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
+    </dd>
+</dl>

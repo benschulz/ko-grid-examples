@@ -1,18 +1,32 @@
-<h1>Container Width</h1>
+<h1>Basic Functionality</h1>
 
 <p>
-    When there are many or very wide columns, the available horizontal space might not suffice to display all
-    columns at the same time. In such cases a grid style of <code>display: block</code> (the default) will make
-    sure the grid gets all the available horizontal space. When that is not sufficient, the table body will
-    become scrollable.
+    The <a href="https://github.com/benschulz/ko-grid-filtering">filtering extension</a> displays a row of search boxes
+    below the column headers. Entering a text into a search box will filter rows based on whether they match the search
+    term in that column.
 </p>
+
+<p>
+    Search terms are interpreted as follows.
+</p>
+<ul>
+    <li>Iff the search term contains no upper case letters, a case insensitive search is performed.</li>
+    <li>An asterisk (<kbd>*</kbd>) matches any substring.</li>
+    <li>
+        A search term containing no asterisks implies
+        <ul>
+            <li>a substring search and</li>
+            <li>a loose "hump search" (<kbd>CR</kbd> is matched by "Czech Republic" and "Costa Rica").</li>
+        </ul>
+    </li>
+</ul>
 
 <div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="container-width" class="fixed-height variable-width grid" data-bind="grid: {
-    config: 'default-config',
+<div id="filtering-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'filtering-basic-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [

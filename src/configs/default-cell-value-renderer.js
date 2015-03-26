@@ -1,8 +1,8 @@
 'use strict';
 
-define(['moment', 'ko-grid-bundle'], function (moment) {
+define(['moment'], function (moment) {
     function defaultCellValueRenderer(value) {
-        if (value === null)
+        if (value === undefined || value === null)
             return '';
 
         if (typeof value === 'object' && Object.getPrototypeOf(value).constructor === Date
@@ -22,19 +22,5 @@ define(['moment', 'ko-grid-bundle'], function (moment) {
         return '' + value;
     }
 
-    var configs = window.ko
-        ? window.ko.bindingHandlers.grid.config = window.ko.bindingHandlers.grid.config || {}
-        : {};
-
-    return configs['ko-grid-sample-config'] = {
-        cellValueRenderer: function (column, value) {
-            var rendered = defaultCellValueRenderer(value);
-            return column.id === 'percentage' ? rendered + ' %' : rendered;
-        },
-        extensions: {
-            aggregate: {},
-            links: {},
-            sorting: {}
-        }
-    };
+    return defaultCellValueRenderer;
 });

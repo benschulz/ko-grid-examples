@@ -1,17 +1,17 @@
-<h1>CSS Naked Day ready</h1>
+<h1>Basic Functionality</h1>
 
 <p>
-    This is not <em>really</em> a feature, but rather a demonstration of code quality. Underneath all those fancy styles a
-    ko-grid is just a single <code>table</code>; consisting of a <code>thead</code>, a <code>tbody</code> and a <code>tfoot</code>.
-    And that's just what you see when all those styles fall away. Go ahead, try it out.
+    The <a href="https://github.com/benschulz/ko-grid-aggregate">aggregation extension</a> calculates various
+    aggregate values and displays them in the table footer. Supported aggregates are the sum, the average as
+    well as the minimum and maximum value.
 </p>
 
-<div data-bind="koGridExampleCranks: ['css-nudity']"></div>
+<div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="css-nudity" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'css-nudity-config',
+<div id="aggregation-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'aggregation-basic-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [
@@ -28,8 +28,7 @@
             { population: 'minimum' },
             { population: 'average', percentage: 'average' },
             { population: 'maximum' }
-        ],
-        links: { country: { uri: 'countryArticle' } }
+        ]
     }
 }">
 </div>
@@ -40,3 +39,14 @@
         <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
     </dd>
 </dl>
+
+<h2>Example configuration</h2>
+
+<pre><code>
+aggregate: [
+    { population: 'sum', percentage: 'sum' },
+    { population: 'minimum' },
+    { population: 'average', percentage: 'average' },
+    { population: 'maximum' }
+]
+</code></pre>
