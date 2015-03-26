@@ -2,7 +2,7 @@
   {
     "id": "1",
     "rank": 1,
-    "country": "China‪",
+    "country": "China",
     "countryArticle": "http://en.wikipedia.org/wiki/China",
     "population": 1368530000,
     "date": 1425427200000,
@@ -11,7 +11,7 @@
   {
     "id": "2",
     "rank": 2,
-    "country": "India‪",
+    "country": "India",
     "countryArticle": "http://en.wikipedia.org/wiki/India",
     "population": 1267740000,
     "date": 1425427200000,
@@ -20,7 +20,7 @@
   {
     "id": "3",
     "rank": 3,
-    "country": "United States‪",
+    "country": "United States",
     "countryArticle": "http://en.wikipedia.org/wiki/United%20States",
     "population": 320516000,
     "date": 1425427200000,
@@ -29,7 +29,7 @@
   {
     "id": "4",
     "rank": 4,
-    "country": "Indonesia‪",
+    "country": "Indonesia",
     "countryArticle": "http://en.wikipedia.org/wiki/Indonesia",
     "population": 255461700,
     "date": 1435708800000,
@@ -38,7 +38,7 @@
   {
     "id": "5",
     "rank": 5,
-    "country": "Brazil‪",
+    "country": "Brazil",
     "countryArticle": "http://en.wikipedia.org/wiki/Brazil",
     "population": 203966000,
     "date": 1425427200000,
@@ -47,7 +47,7 @@
   {
     "id": "6",
     "rank": 6,
-    "country": "Pakistan‪",
+    "country": "Pakistan",
     "countryArticle": "http://en.wikipedia.org/wiki/Pakistan",
     "population": 189132000,
     "date": 1425427200000,
@@ -56,7 +56,7 @@
   {
     "id": "7",
     "rank": 7,
-    "country": "Nigeria‪",
+    "country": "Nigeria",
     "countryArticle": "http://en.wikipedia.org/wiki/Nigeria",
     "population": 183523000,
     "date": 1435708800000,
@@ -65,7 +65,7 @@
   {
     "id": "8",
     "rank": 8,
-    "country": "Bangladesh‪",
+    "country": "Bangladesh",
     "countryArticle": "http://en.wikipedia.org/wiki/Bangladesh",
     "population": 157930000,
     "date": 1425427200000,
@@ -74,7 +74,7 @@
   {
     "id": "9",
     "rank": 9,
-    "country": "Russia‪",
+    "country": "Russia",
     "countryArticle": "http://en.wikipedia.org/wiki/Russia",
     "population": 146270033,
     "date": 1420070400000,
@@ -83,7 +83,7 @@
   {
     "id": "10",
     "rank": 10,
-    "country": "Japan‪",
+    "country": "Japan",
     "countryArticle": "http://en.wikipedia.org/wiki/Japan",
     "population": 126970000,
     "date": 1422748800000,
@@ -92,7 +92,7 @@
   {
     "id": "11",
     "rank": 11,
-    "country": "Mexico‪",
+    "country": "Mexico",
     "countryArticle": "http://en.wikipedia.org/wiki/Mexico",
     "population": 121005815,
     "date": 1435708800000,
@@ -101,7 +101,7 @@
   {
     "id": "12",
     "rank": 12,
-    "country": "Philippines‪",
+    "country": "Philippines",
     "countryArticle": "http://en.wikipedia.org/wiki/Philippines",
     "population": 101088500,
     "date": 1425427200000,
@@ -110,7 +110,7 @@
   {
     "id": "13",
     "rank": 13,
-    "country": "Vietnam‪",
+    "country": "Vietnam",
     "countryArticle": "http://en.wikipedia.org/wiki/Vietnam",
     "population": 90730000,
     "date": 1404172800000,
@@ -119,7 +119,7 @@
   {
     "id": "14",
     "rank": 14,
-    "country": "Ethiopia‪",
+    "country": "Ethiopia",
     "countryArticle": "http://en.wikipedia.org/wiki/Ethiopia",
     "population": 90076012,
     "date": 1435708800000,
@@ -128,7 +128,7 @@
   {
     "id": "15",
     "rank": 15,
-    "country": "Egypt‪",
+    "country": "Egypt",
     "countryArticle": "http://en.wikipedia.org/wiki/Egypt",
     "population": 88112000,
     "date": 1425427200000,
@@ -137,7 +137,7 @@
   {
     "id": "16",
     "rank": 16,
-    "country": "Germany‪",
+    "country": "Germany",
     "countryArticle": "http://en.wikipedia.org/wiki/Germany",
     "population": 80925000,
     "date": 1404086400000,
@@ -146,7 +146,7 @@
   {
     "id": "17",
     "rank": 17,
-    "country": "Iran‪",
+    "country": "Iran",
     "countryArticle": "http://en.wikipedia.org/wiki/Iran",
     "population": 78160300,
     "date": 1425427200000,
@@ -155,7 +155,7 @@
   {
     "id": "18",
     "rank": 18,
-    "country": "Turkey‪",
+    "country": "Turkey",
     "countryArticle": "http://en.wikipedia.org/wiki/Turkey",
     "population": 77695904,
     "date": 1419984000000,
@@ -164,7 +164,7 @@
   {
     "id": "19",
     "rank": 19,
-    "country": "Democratic Republic of the Congo‪",
+    "country": "Democratic Republic of the Congo",
     "countryArticle": "http://en.wikipedia.org/wiki/Democratic%20Republic%20of%20the%20Congo",
     "population": 71246000,
     "date": 1435708800000,
@@ -173,7 +173,7 @@
   {
     "id": "20",
     "rank": 20,
-    "country": "France‪",
+    "country": "France",
     "countryArticle": "http://en.wikipedia.org/wiki/France",
     "population": 66104000,
     "date": 1422748800000,
@@ -182,7 +182,7 @@
   {
     "id": "21",
     "rank": 21,
-    "country": "Thailand‪",
+    "country": "Thailand",
     "countryArticle": "http://en.wikipedia.org/wiki/Thailand",
     "population": 64871000,
     "date": 1404172800000,
@@ -191,7 +191,7 @@
   {
     "id": "22",
     "rank": 22,
-    "country": "United Kingdom‪",
+    "country": "United Kingdom",
     "countryArticle": "http://en.wikipedia.org/wiki/United%20Kingdom",
     "population": 64105654,
     "date": 1372636800000,
@@ -200,7 +200,7 @@
   {
     "id": "23",
     "rank": 23,
-    "country": "Italy‪",
+    "country": "Italy",
     "countryArticle": "http://en.wikipedia.org/wiki/Italy",
     "population": 60782309,
     "date": 1412035200000,
@@ -209,7 +209,7 @@
   {
     "id": "24",
     "rank": 24,
-    "country": "South Africa‪",
+    "country": "South Africa",
     "countryArticle": "http://en.wikipedia.org/wiki/South%20Africa",
     "population": 54002000,
     "date": 1404172800000,
@@ -218,7 +218,7 @@
   {
     "id": "25",
     "rank": 25,
-    "country": "Burma‪",
+    "country": "Burma",
     "countryArticle": "http://en.wikipedia.org/wiki/Burma",
     "population": 51419420,
     "date": 1396051200000,
@@ -227,7 +227,7 @@
   {
     "id": "26",
     "rank": 26,
-    "country": "South Korea‪",
+    "country": "South Korea",
     "countryArticle": "http://en.wikipedia.org/wiki/South%20Korea",
     "population": 51342881,
     "date": 1420070400000,
@@ -236,7 +236,7 @@
   {
     "id": "27",
     "rank": 27,
-    "country": "Colombia‪",
+    "country": "Colombia",
     "countryArticle": "http://en.wikipedia.org/wiki/Colombia",
     "population": 48022500,
     "date": 1425427200000,
@@ -245,7 +245,7 @@
   {
     "id": "28",
     "rank": 28,
-    "country": "Tanzania‪",
+    "country": "Tanzania",
     "countryArticle": "http://en.wikipedia.org/wiki/Tanzania",
     "population": 47421786,
     "date": 1404172800000,
@@ -254,7 +254,7 @@
   {
     "id": "29",
     "rank": 29,
-    "country": "Kenya‪",
+    "country": "Kenya",
     "countryArticle": "http://en.wikipedia.org/wiki/Kenya",
     "population": 46749000,
     "date": 1435708800000,
@@ -263,7 +263,7 @@
   {
     "id": "30",
     "rank": 30,
-    "country": "Spain‪",
+    "country": "Spain",
     "countryArticle": "http://en.wikipedia.org/wiki/Spain",
     "population": 46464053,
     "date": 1404172800000,
@@ -272,7 +272,7 @@
   {
     "id": "31",
     "rank": 31,
-    "country": "Argentina‪",
+    "country": "Argentina",
     "countryArticle": "http://en.wikipedia.org/wiki/Argentina",
     "population": 43131966,
     "date": 1435708800000,
@@ -281,7 +281,7 @@
   {
     "id": "32",
     "rank": 32,
-    "country": "Ukraine‪",
+    "country": "Ukraine",
     "countryArticle": "http://en.wikipedia.org/wiki/Ukraine",
     "population": 42928900,
     "date": 1420070400000,
@@ -290,7 +290,7 @@
   {
     "id": "33",
     "rank": 33,
-    "country": "Algeria‪",
+    "country": "Algeria",
     "countryArticle": "http://en.wikipedia.org/wiki/Algeria",
     "population": 39500000,
     "date": 1420070400000,
@@ -299,7 +299,7 @@
   {
     "id": "34",
     "rank": 34,
-    "country": "Poland‪",
+    "country": "Poland",
     "countryArticle": "http://en.wikipedia.org/wiki/Poland",
     "population": 38484000,
     "date": 1419984000000,
@@ -308,7 +308,7 @@
   {
     "id": "35",
     "rank": 35,
-    "country": "Sudan‪",
+    "country": "Sudan",
     "countryArticle": "http://en.wikipedia.org/wiki/Sudan",
     "population": 38435252,
     "date": 1435708800000,
@@ -317,7 +317,7 @@
   {
     "id": "36",
     "rank": 36,
-    "country": "Iraq‪",
+    "country": "Iraq",
     "countryArticle": "http://en.wikipedia.org/wiki/Iraq",
     "population": 36004552,
     "date": 1404172800000,
@@ -326,7 +326,7 @@
   {
     "id": "37",
     "rank": 37,
-    "country": "Canada‪",
+    "country": "Canada",
     "countryArticle": "http://en.wikipedia.org/wiki/Canada",
     "population": 35675834,
     "date": 1412121600000,
@@ -335,7 +335,7 @@
   {
     "id": "38",
     "rank": 38,
-    "country": "Uganda‪",
+    "country": "Uganda",
     "countryArticle": "http://en.wikipedia.org/wiki/Uganda",
     "population": 34856813,
     "date": 1409184000000,
@@ -344,7 +344,7 @@
   {
     "id": "39",
     "rank": 39,
-    "country": "Morocco‪",
+    "country": "Morocco",
     "countryArticle": "http://en.wikipedia.org/wiki/Morocco",
     "population": 33541200,
     "date": 1425427200000,
@@ -353,7 +353,7 @@
   {
     "id": "40",
     "rank": 40,
-    "country": "Saudi Arabia‪",
+    "country": "Saudi Arabia",
     "countryArticle": "http://en.wikipedia.org/wiki/Saudi%20Arabia",
     "population": 31521418,
     "date": 1435708800000,
@@ -362,7 +362,7 @@
   {
     "id": "41",
     "rank": 41,
-    "country": "Peru‪",
+    "country": "Peru",
     "countryArticle": "http://en.wikipedia.org/wiki/Peru",
     "population": 31151643,
     "date": 1435708800000,
@@ -371,7 +371,7 @@
   {
     "id": "42",
     "rank": 42,
-    "country": "Venezuela‪",
+    "country": "Venezuela",
     "countryArticle": "http://en.wikipedia.org/wiki/Venezuela",
     "population": 30620404,
     "date": 1435708800000,
@@ -380,7 +380,7 @@
   {
     "id": "43",
     "rank": 43,
-    "country": "Malaysia‪",
+    "country": "Malaysia",
     "countryArticle": "http://en.wikipedia.org/wiki/Malaysia",
     "population": 30509900,
     "date": 1425427200000,
@@ -389,7 +389,7 @@
   {
     "id": "44",
     "rank": 44,
-    "country": "Uzbekistan‪",
+    "country": "Uzbekistan",
     "countryArticle": "http://en.wikipedia.org/wiki/Uzbekistan",
     "population": 30492800,
     "date": 1388534400000,
@@ -398,7 +398,7 @@
   {
     "id": "45",
     "rank": 45,
-    "country": "Nepal‪",
+    "country": "Nepal",
     "countryArticle": "http://en.wikipedia.org/wiki/Nepal",
     "population": 28037904,
     "date": 1435708800000,
@@ -407,7 +407,7 @@
   {
     "id": "46",
     "rank": 46,
-    "country": "Ghana‪",
+    "country": "Ghana",
     "countryArticle": "http://en.wikipedia.org/wiki/Ghana",
     "population": 27043093,
     "date": 1404172800000,
@@ -416,7 +416,7 @@
   {
     "id": "47",
     "rank": 47,
-    "country": "Afghanistan‪",
+    "country": "Afghanistan",
     "countryArticle": "http://en.wikipedia.org/wiki/Afghanistan",
     "population": 26556800,
     "date": 1404172800000,
@@ -425,7 +425,7 @@
   {
     "id": "48",
     "rank": 48,
-    "country": "Yemen‪",
+    "country": "Yemen",
     "countryArticle": "http://en.wikipedia.org/wiki/Yemen",
     "population": 25956000,
     "date": 1404172800000,
@@ -434,7 +434,7 @@
   {
     "id": "49",
     "rank": 49,
-    "country": "Mozambique‪",
+    "country": "Mozambique",
     "countryArticle": "http://en.wikipedia.org/wiki/Mozambique",
     "population": 25727911,
     "date": 1435708800000,
@@ -443,7 +443,7 @@
   {
     "id": "50",
     "rank": 50,
-    "country": "North Korea‪",
+    "country": "North Korea",
     "countryArticle": "http://en.wikipedia.org/wiki/North%20Korea",
     "population": 25155000,
     "date": 1435708800000,
@@ -452,7 +452,7 @@
   {
     "id": "51",
     "rank": 51,
-    "country": "Angola‪",
+    "country": "Angola",
     "countryArticle": "http://en.wikipedia.org/wiki/Angola",
     "population": 24383301,
     "date": 1400198400000,
@@ -461,7 +461,7 @@
   {
     "id": "52",
     "rank": 52,
-    "country": "Australia‪",
+    "country": "Australia",
     "countryArticle": "http://en.wikipedia.org/wiki/Australia",
     "population": 23764300,
     "date": 1425427200000,
@@ -470,7 +470,7 @@
   {
     "id": "53",
     "rank": 53,
-    "country": "Taiwan‪",
+    "country": "Taiwan",
     "countryArticle": "http://en.wikipedia.org/wiki/Taiwan",
     "population": 23440278,
     "date": 1422662400000,
@@ -479,7 +479,7 @@
   {
     "id": "54",
     "rank": 54,
-    "country": "Syria‪",
+    "country": "Syria",
     "countryArticle": "http://en.wikipedia.org/wiki/Syria",
     "population": 23084325,
     "date": 1425427200000,
@@ -488,7 +488,7 @@
   {
     "id": "55",
     "rank": 55,
-    "country": "Ivory Coast‪",
+    "country": "Ivory Coast",
     "countryArticle": "http://en.wikipedia.org/wiki/Ivory%20Coast",
     "population": 22671331,
     "date": 1400112000000,
@@ -497,7 +497,7 @@
   {
     "id": "56",
     "rank": 56,
-    "country": "Madagascar‪",
+    "country": "Madagascar",
     "countryArticle": "http://en.wikipedia.org/wiki/Madagascar",
     "population": 21842167,
     "date": 1372636800000,
@@ -506,7 +506,7 @@
   {
     "id": "57",
     "rank": 57,
-    "country": "Cameroon‪",
+    "country": "Cameroon",
     "countryArticle": "http://en.wikipedia.org/wiki/Cameroon",
     "population": 21143237,
     "date": 1372636800000,
@@ -515,7 +515,7 @@
   {
     "id": "58",
     "rank": 58,
-    "country": "Sri Lanka‪",
+    "country": "Sri Lanka",
     "countryArticle": "http://en.wikipedia.org/wiki/Sri%20Lanka",
     "population": 20359439,
     "date": 1332115200000,
@@ -524,7 +524,7 @@
   {
     "id": "59",
     "rank": 59,
-    "country": "Romania‪",
+    "country": "Romania",
     "countryArticle": "http://en.wikipedia.org/wiki/Romania",
     "population": 19942642,
     "date": 1388534400000,
@@ -533,7 +533,7 @@
   {
     "id": "60",
     "rank": 60,
-    "country": "Niger‪",
+    "country": "Niger",
     "countryArticle": "http://en.wikipedia.org/wiki/Niger",
     "population": 19268000,
     "date": 1435708800000,
@@ -542,7 +542,7 @@
   {
     "id": "61",
     "rank": 61,
-    "country": "Burkina Faso‪",
+    "country": "Burkina Faso",
     "countryArticle": "http://en.wikipedia.org/wiki/Burkina%20Faso",
     "population": 18450494,
     "date": 1435708800000,
@@ -551,7 +551,7 @@
   {
     "id": "62",
     "rank": 62,
-    "country": "Chile‪",
+    "country": "Chile",
     "countryArticle": "http://en.wikipedia.org/wiki/Chile",
     "population": 18006407,
     "date": 1435708800000,
@@ -560,7 +560,7 @@
   {
     "id": "63",
     "rank": 63,
-    "country": "Kazakhstan‪",
+    "country": "Kazakhstan",
     "countryArticle": "http://en.wikipedia.org/wiki/Kazakhstan",
     "population": 17417500,
     "date": 1420070400000,
@@ -569,7 +569,7 @@
   {
     "id": "64",
     "rank": 64,
-    "country": "Netherlands‪",
+    "country": "Netherlands",
     "countryArticle": "http://en.wikipedia.org/wiki/Netherlands",
     "population": 16892200,
     "date": 1425427200000,
@@ -578,7 +578,7 @@
   {
     "id": "65",
     "rank": 65,
-    "country": "Malawi‪",
+    "country": "Malawi",
     "countryArticle": "http://en.wikipedia.org/wiki/Malawi",
     "population": 16310431,
     "date": 1435708800000,
@@ -587,7 +587,7 @@
   {
     "id": "66",
     "rank": 66,
-    "country": "Mali‪",
+    "country": "Mali",
     "countryArticle": "http://en.wikipedia.org/wiki/Mali",
     "population": 16259000,
     "date": 1435708800000,
@@ -596,7 +596,7 @@
   {
     "id": "67",
     "rank": 67,
-    "country": "Ecuador‪",
+    "country": "Ecuador",
     "countryArticle": "http://en.wikipedia.org/wiki/Ecuador",
     "population": 15943800,
     "date": 1425427200000,
@@ -605,7 +605,7 @@
   {
     "id": "68",
     "rank": 68,
-    "country": "Guatemala‪",
+    "country": "Guatemala",
     "countryArticle": "http://en.wikipedia.org/wiki/Guatemala",
     "population": 15806675,
     "date": 1404172800000,
@@ -614,7 +614,7 @@
   {
     "id": "69",
     "rank": 69,
-    "country": "Zambia‪",
+    "country": "Zambia",
     "countryArticle": "http://en.wikipedia.org/wiki/Zambia",
     "population": 15473905,
     "date": 1435708800000,
@@ -623,7 +623,7 @@
   {
     "id": "70",
     "rank": 70,
-    "country": "Cambodia‪",
+    "country": "Cambodia",
     "countryArticle": "http://en.wikipedia.org/wiki/Cambodia",
     "population": 15405157,
     "date": 1435708800000,
@@ -632,7 +632,7 @@
   {
     "id": "71",
     "rank": 71,
-    "country": "Chad‪",
+    "country": "Chad",
     "countryArticle": "http://en.wikipedia.org/wiki/Chad",
     "population": 13606000,
     "date": 1435708800000,
@@ -641,7 +641,7 @@
   {
     "id": "72",
     "rank": 72,
-    "country": "Senegal‪",
+    "country": "Senegal",
     "countryArticle": "http://en.wikipedia.org/wiki/Senegal",
     "population": 13508715,
     "date": 1384819200000,
@@ -650,7 +650,7 @@
   {
     "id": "73",
     "rank": 73,
-    "country": "Zimbabwe‪",
+    "country": "Zimbabwe",
     "countryArticle": "http://en.wikipedia.org/wiki/Zimbabwe",
     "population": 13061239,
     "date": 1345161600000,
@@ -659,7 +659,7 @@
   {
     "id": "74",
     "rank": 74,
-    "country": "South Sudan‪",
+    "country": "South Sudan",
     "countryArticle": "http://en.wikipedia.org/wiki/South%20Sudan",
     "population": 11892934,
     "date": 1435708800000,
@@ -668,7 +668,7 @@
   {
     "id": "75",
     "rank": 75,
-    "country": "Bolivia‪",
+    "country": "Bolivia",
     "countryArticle": "http://en.wikipedia.org/wiki/Bolivia",
     "population": 11410651,
     "date": 1435708800000,
@@ -677,7 +677,7 @@
   {
     "id": "76",
     "rank": 76,
-    "country": "Belgium‪",
+    "country": "Belgium",
     "countryArticle": "http://en.wikipedia.org/wiki/Belgium",
     "population": 11237160,
     "date": 1420070400000,
@@ -686,7 +686,7 @@
   {
     "id": "77",
     "rank": 77,
-    "country": "Cuba‪",
+    "country": "Cuba",
     "countryArticle": "http://en.wikipedia.org/wiki/Cuba",
     "population": 11210064,
     "date": 1388448000000,
@@ -695,7 +695,7 @@
   {
     "id": "78",
     "rank": 78,
-    "country": "Somalia‪",
+    "country": "Somalia",
     "countryArticle": "http://en.wikipedia.org/wiki/Somalia",
     "population": 11123000,
     "date": 1435708800000,
@@ -704,7 +704,7 @@
   {
     "id": "79",
     "rank": 79,
-    "country": "Rwanda‪",
+    "country": "Rwanda",
     "countryArticle": "http://en.wikipedia.org/wiki/Rwanda",
     "population": 10996891,
     "date": 1404172800000,
@@ -713,7 +713,7 @@
   {
     "id": "80",
     "rank": 80,
-    "country": "Greece‪",
+    "country": "Greece",
     "countryArticle": "http://en.wikipedia.org/wiki/Greece",
     "population": 10992589,
     "date": 1388534400000,
@@ -722,7 +722,7 @@
   {
     "id": "81",
     "rank": 81,
-    "country": "Tunisia‪",
+    "country": "Tunisia",
     "countryArticle": "http://en.wikipedia.org/wiki/Tunisia",
     "population": 10982754,
     "date": 1398211200000,
@@ -731,7 +731,7 @@
   {
     "id": "82",
     "rank": 82,
-    "country": "Haiti‪",
+    "country": "Haiti",
     "countryArticle": "http://en.wikipedia.org/wiki/Haiti",
     "population": 10911819,
     "date": 1435708800000,
@@ -740,7 +740,7 @@
   {
     "id": "83",
     "rank": 83,
-    "country": "Guinea‪",
+    "country": "Guinea",
     "countryArticle": "http://en.wikipedia.org/wiki/Guinea",
     "population": 10628972,
     "date": 1396396800000,
@@ -749,7 +749,7 @@
   {
     "id": "84",
     "rank": 84,
-    "country": "Czech Republic‪",
+    "country": "Czech Republic",
     "countryArticle": "http://en.wikipedia.org/wiki/Czech%20Republic",
     "population": 10528477,
     "date": 1412035200000,
@@ -758,7 +758,7 @@
   {
     "id": "85",
     "rank": 85,
-    "country": "Portugal‪",
+    "country": "Portugal",
     "countryArticle": "http://en.wikipedia.org/wiki/Portugal",
     "population": 10477800,
     "date": 1388448000000,
@@ -767,7 +767,7 @@
   {
     "id": "86",
     "rank": 86,
-    "country": "Dominican Republic‪",
+    "country": "Dominican Republic",
     "countryArticle": "http://en.wikipedia.org/wiki/Dominican%20Republic",
     "population": 10378267,
     "date": 1404172800000,
@@ -776,7 +776,7 @@
   {
     "id": "87",
     "rank": 87,
-    "country": "Benin‪",
+    "country": "Benin",
     "countryArticle": "http://en.wikipedia.org/wiki/Benin",
     "population": 10315244,
     "date": 1435708800000,
@@ -785,7 +785,7 @@
   {
     "id": "88",
     "rank": 88,
-    "country": "Hungary‪",
+    "country": "Hungary",
     "countryArticle": "http://en.wikipedia.org/wiki/Hungary",
     "population": 9849000,
     "date": 1419984000000,
@@ -794,7 +794,7 @@
   {
     "id": "89",
     "rank": 89,
-    "country": "Burundi‪",
+    "country": "Burundi",
     "countryArticle": "http://en.wikipedia.org/wiki/Burundi",
     "population": 9823827,
     "date": 1435708800000,
@@ -803,7 +803,7 @@
   {
     "id": "90",
     "rank": 90,
-    "country": "Sweden‪",
+    "country": "Sweden",
     "countryArticle": "http://en.wikipedia.org/wiki/Sweden",
     "population": 9747355,
     "date": 1419984000000,
@@ -812,7 +812,7 @@
   {
     "id": "91",
     "rank": 91,
-    "country": "Azerbaijan‪",
+    "country": "Azerbaijan",
     "countryArticle": "http://en.wikipedia.org/wiki/Azerbaijan",
     "population": 9593000,
     "date": 1420070400000,
@@ -821,7 +821,7 @@
   {
     "id": "92",
     "rank": 92,
-    "country": "United Arab Emirates‪",
+    "country": "United Arab Emirates",
     "countryArticle": "http://en.wikipedia.org/wiki/United%20Arab%20Emirates",
     "population": 9577000,
     "date": 1435708800000,
@@ -830,7 +830,7 @@
   {
     "id": "93",
     "rank": 93,
-    "country": "Belarus‪",
+    "country": "Belarus",
     "countryArticle": "http://en.wikipedia.org/wiki/Belarus",
     "population": 9481000,
     "date": 1420070400000,
@@ -839,7 +839,7 @@
   {
     "id": "94",
     "rank": 94,
-    "country": "Honduras‪",
+    "country": "Honduras",
     "countryArticle": "http://en.wikipedia.org/wiki/Honduras",
     "population": 8725111,
     "date": 1404172800000,
@@ -848,7 +848,7 @@
   {
     "id": "95",
     "rank": 95,
-    "country": "Austria‪",
+    "country": "Austria",
     "countryArticle": "http://en.wikipedia.org/wiki/Austria",
     "population": 8579747,
     "date": 1420070400000,
@@ -857,7 +857,7 @@
   {
     "id": "96",
     "rank": 96,
-    "country": "Tajikistan‪",
+    "country": "Tajikistan",
     "countryArticle": "http://en.wikipedia.org/wiki/Tajikistan",
     "population": 8354000,
     "date": 1420070400000,
@@ -866,7 +866,7 @@
   {
     "id": "97",
     "rank": 97,
-    "country": "Israel‪",
+    "country": "Israel",
     "countryArticle": "http://en.wikipedia.org/wiki/Israel",
     "population": 8309400,
     "date": 1422662400000,
@@ -875,7 +875,7 @@
   {
     "id": "98",
     "rank": 98,
-    "country": "Switzerland‪",
+    "country": "Switzerland",
     "countryArticle": "http://en.wikipedia.org/wiki/Switzerland",
     "population": 8211700,
     "date": 1412035200000,
@@ -884,7 +884,7 @@
   {
     "id": "99",
     "rank": 99,
-    "country": "Papua New Guinea‪",
+    "country": "Papua New Guinea",
     "countryArticle": "http://en.wikipedia.org/wiki/Papua%20New%20Guinea",
     "population": 7398500,
     "date": 1372636800000,
@@ -893,7 +893,7 @@
   {
     "id": "100",
     "rank": 100,
-    "country": "Hong Kong (China)‪",
+    "country": "Hong Kong (China)",
     "countryArticle": "http://en.wikipedia.org/wiki/Hong%20Kong%20(China)",
     "population": 7264100,
     "date": 1419984000000,
@@ -902,7 +902,7 @@
   {
     "id": "101",
     "rank": 101,
-    "country": "Bulgaria‪",
+    "country": "Bulgaria",
     "countryArticle": "http://en.wikipedia.org/wiki/Bulgaria",
     "population": 7245677,
     "date": 1388448000000,
@@ -911,7 +911,7 @@
   {
     "id": "102",
     "rank": 102,
-    "country": "Togo‪",
+    "country": "Togo",
     "countryArticle": "http://en.wikipedia.org/wiki/Togo",
     "population": 7171000,
     "date": 1435708800000,
@@ -920,7 +920,7 @@
   {
     "id": "103",
     "rank": 103,
-    "country": "Serbia‪",
+    "country": "Serbia",
     "countryArticle": "http://en.wikipedia.org/wiki/Serbia",
     "population": 7146759,
     "date": 1388534400000,
@@ -929,7 +929,7 @@
   {
     "id": "104",
     "rank": 104,
-    "country": "Paraguay‪",
+    "country": "Paraguay",
     "countryArticle": "http://en.wikipedia.org/wiki/Paraguay",
     "population": 6893727,
     "date": 1388534400000,
@@ -938,7 +938,7 @@
   {
     "id": "105",
     "rank": 105,
-    "country": "Laos‪",
+    "country": "Laos",
     "countryArticle": "http://en.wikipedia.org/wiki/Laos",
     "population": 6802000,
     "date": 1435708800000,
@@ -947,7 +947,7 @@
   {
     "id": "106",
     "rank": 106,
-    "country": "Eritrea‪",
+    "country": "Eritrea",
     "countryArticle": "http://en.wikipedia.org/wiki/Eritrea",
     "population": 6738000,
     "date": 1435708800000,
@@ -956,7 +956,7 @@
   {
     "id": "107",
     "rank": 107,
-    "country": "Jordan‪",
+    "country": "Jordan",
     "countryArticle": "http://en.wikipedia.org/wiki/Jordan",
     "population": 6697530,
     "date": 1425427200000,
@@ -965,7 +965,7 @@
   {
     "id": "108",
     "rank": 108,
-    "country": "El Salvador‪",
+    "country": "El Salvador",
     "countryArticle": "http://en.wikipedia.org/wiki/El%20Salvador",
     "population": 6401240,
     "date": 1388534400000,
@@ -974,7 +974,7 @@
   {
     "id": "109",
     "rank": 109,
-    "country": "Sierra Leone‪",
+    "country": "Sierra Leone",
     "countryArticle": "http://en.wikipedia.org/wiki/Sierra%20Leone",
     "population": 6319000,
     "date": 1435708800000,
@@ -983,7 +983,7 @@
   {
     "id": "110",
     "rank": 110,
-    "country": "Libya‪",
+    "country": "Libya",
     "countryArticle": "http://en.wikipedia.org/wiki/Libya",
     "population": 6317000,
     "date": 1435708800000,
@@ -992,7 +992,7 @@
   {
     "id": "111",
     "rank": 111,
-    "country": "Nicaragua‪",
+    "country": "Nicaragua",
     "countryArticle": "http://en.wikipedia.org/wiki/Nicaragua",
     "population": 6134270,
     "date": 1356998400000,
@@ -1001,7 +1001,7 @@
   {
     "id": "112",
     "rank": 112,
-    "country": "Kyrgyzstan‪",
+    "country": "Kyrgyzstan",
     "countryArticle": "http://en.wikipedia.org/wiki/Kyrgyzstan",
     "population": 5895100,
     "date": 1420070400000,
@@ -1010,7 +1010,7 @@
   {
     "id": "113",
     "rank": 113,
-    "country": "Denmark‪",
+    "country": "Denmark",
     "countryArticle": "http://en.wikipedia.org/wiki/Denmark",
     "population": 5659715,
     "date": 1420070400000,
@@ -1019,7 +1019,7 @@
   {
     "id": "114",
     "rank": 114,
-    "country": "Finland‪",
+    "country": "Finland",
     "countryArticle": "http://en.wikipedia.org/wiki/Finland",
     "population": 5475526,
     "date": 1422748800000,
@@ -1028,7 +1028,7 @@
   {
     "id": "115",
     "rank": 115,
-    "country": "Singapore‪",
+    "country": "Singapore",
     "countryArticle": "http://en.wikipedia.org/wiki/Singapore",
     "population": 5469700,
     "date": 1404172800000,
@@ -1037,7 +1037,7 @@
   {
     "id": "116",
     "rank": 116,
-    "country": "Slovakia‪",
+    "country": "Slovakia",
     "countryArticle": "http://en.wikipedia.org/wiki/Slovakia",
     "population": 5421034,
     "date": 1412035200000,
@@ -1046,7 +1046,7 @@
   {
     "id": "117",
     "rank": 117,
-    "country": "Norway‪",
+    "country": "Norway",
     "countryArticle": "http://en.wikipedia.org/wiki/Norway",
     "population": 5165802,
     "date": 1420070400000,
@@ -1055,7 +1055,7 @@
   {
     "id": "118",
     "rank": 118,
-    "country": "Central African Republic‪",
+    "country": "Central African Republic",
     "countryArticle": "http://en.wikipedia.org/wiki/Central%20African%20Republic",
     "population": 4803000,
     "date": 1435708800000,
@@ -1064,7 +1064,7 @@
   {
     "id": "119",
     "rank": 119,
-    "country": "Costa Rica‪",
+    "country": "Costa Rica",
     "countryArticle": "http://en.wikipedia.org/wiki/Costa%20Rica",
     "population": 4773130,
     "date": 1404086400000,
@@ -1073,7 +1073,7 @@
   {
     "id": "120",
     "rank": 120,
-    "country": "Turkmenistan‪",
+    "country": "Turkmenistan",
     "countryArticle": "http://en.wikipedia.org/wiki/Turkmenistan",
     "population": 4751120,
     "date": 1356566400000,
@@ -1082,7 +1082,7 @@
   {
     "id": "121",
     "rank": 121,
-    "country": "Republic of the Congo‪",
+    "country": "Republic of the Congo",
     "countryArticle": "http://en.wikipedia.org/wiki/Republic%20of%20the%20Congo",
     "population": 4671000,
     "date": 1435708800000,
@@ -1091,7 +1091,7 @@
   {
     "id": "122",
     "rank": 122,
-    "country": "Ireland‪",
+    "country": "Ireland",
     "countryArticle": "http://en.wikipedia.org/wiki/Ireland",
     "population": 4609600,
     "date": 1396310400000,
@@ -1100,7 +1100,7 @@
   {
     "id": "123",
     "rank": 123,
-    "country": "New Zealand‪",
+    "country": "New Zealand",
     "countryArticle": "http://en.wikipedia.org/wiki/New%20Zealand",
     "population": 4565770,
     "date": 1425427200000,
@@ -1109,7 +1109,7 @@
   {
     "id": "124",
     "rank": 124,
-    "country": "Palestine‪",
+    "country": "Palestine",
     "countryArticle": "http://en.wikipedia.org/wiki/Palestine",
     "population": 4550368,
     "date": 1404172800000,
@@ -1118,7 +1118,7 @@
   {
     "id": "125",
     "rank": 125,
-    "country": "Liberia‪",
+    "country": "Liberia",
     "countryArticle": "http://en.wikipedia.org/wiki/Liberia",
     "population": 4503000,
     "date": 1435708800000,
@@ -1127,7 +1127,7 @@
   {
     "id": "126",
     "rank": 126,
-    "country": "Georgia‪",
+    "country": "Georgia",
     "countryArticle": "http://en.wikipedia.org/wiki/Georgia",
     "population": 4490500,
     "date": 1388534400000,
@@ -1136,7 +1136,7 @@
   {
     "id": "127",
     "rank": 127,
-    "country": "Croatia‪",
+    "country": "Croatia",
     "countryArticle": "http://en.wikipedia.org/wiki/Croatia",
     "population": 4267558,
     "date": 1341100800000,
@@ -1145,7 +1145,7 @@
   {
     "id": "128",
     "rank": 128,
-    "country": "Oman‪",
+    "country": "Oman",
     "countryArticle": "http://en.wikipedia.org/wiki/Oman",
     "population": 4130593,
     "date": 1424217600000,
@@ -1154,7 +1154,7 @@
   {
     "id": "129",
     "rank": 129,
-    "country": "Lebanon‪",
+    "country": "Lebanon",
     "countryArticle": "http://en.wikipedia.org/wiki/Lebanon",
     "population": 4104000,
     "date": 1341100800000,
@@ -1163,7 +1163,7 @@
   {
     "id": "130",
     "rank": 130,
-    "country": "Bosnia and Herzegovina‪",
+    "country": "Bosnia and Herzegovina",
     "countryArticle": "http://en.wikipedia.org/wiki/Bosnia%20and%20Herzegovina",
     "population": 3791622,
     "date": 1381795200000,
@@ -1172,7 +1172,7 @@
   {
     "id": "131",
     "rank": 131,
-    "country": "Panama‪",
+    "country": "Panama",
     "countryArticle": "http://en.wikipedia.org/wiki/Panama",
     "population": 3713312,
     "date": 1404172800000,
@@ -1181,7 +1181,7 @@
   {
     "id": "132",
     "rank": 132,
-    "country": "Moldova‪",
+    "country": "Moldova",
     "countryArticle": "http://en.wikipedia.org/wiki/Moldova",
     "population": 3557600,
     "date": 1388534400000,
@@ -1190,7 +1190,7 @@
   {
     "id": "133",
     "rank": 133,
-    "country": "Puerto Rico (U.S.)‪",
+    "country": "Puerto Rico (U.S.)",
     "countryArticle": "http://en.wikipedia.org/wiki/Puerto%20Rico%20(U.S.)",
     "population": 3548397,
     "date": 1404172800000,
@@ -1199,7 +1199,7 @@
   {
     "id": "134",
     "rank": 134,
-    "country": "Mauritania‪",
+    "country": "Mauritania",
     "countryArticle": "http://en.wikipedia.org/wiki/Mauritania",
     "population": 3545620,
     "date": 1404172800000,
@@ -1208,7 +1208,7 @@
   {
     "id": "135",
     "rank": 135,
-    "country": "Uruguay‪",
+    "country": "Uruguay",
     "countryArticle": "http://en.wikipedia.org/wiki/Uruguay",
     "population": 3404189,
     "date": 1404086400000,
@@ -1217,7 +1217,7 @@
   {
     "id": "136",
     "rank": 136,
-    "country": "Kuwait‪",
+    "country": "Kuwait",
     "countryArticle": "http://en.wikipedia.org/wiki/Kuwait",
     "population": 3268431,
     "date": 1341100800000,
@@ -1226,7 +1226,7 @@
   {
     "id": "137",
     "rank": 137,
-    "country": "Armenia‪",
+    "country": "Armenia",
     "countryArticle": "http://en.wikipedia.org/wiki/Armenia",
     "population": 3013900,
     "date": 1412035200000,
@@ -1235,7 +1235,7 @@
   {
     "id": "138",
     "rank": 138,
-    "country": "Mongolia‪",
+    "country": "Mongolia",
     "countryArticle": "http://en.wikipedia.org/wiki/Mongolia",
     "population": 3000000,
     "date": 1422057600000,
@@ -1244,7 +1244,7 @@
   {
     "id": "139",
     "rank": 139,
-    "country": "Lithuania‪",
+    "country": "Lithuania",
     "countryArticle": "http://en.wikipedia.org/wiki/Lithuania",
     "population": 2919306,
     "date": 1391212800000,
@@ -1253,7 +1253,7 @@
   {
     "id": "140",
     "rank": 140,
-    "country": "Albania‪",
+    "country": "Albania",
     "countryArticle": "http://en.wikipedia.org/wiki/Albania",
     "population": 2893005,
     "date": 1420070400000,
@@ -1262,7 +1262,7 @@
   {
     "id": "141",
     "rank": 141,
-    "country": "Jamaica‪",
+    "country": "Jamaica",
     "countryArticle": "http://en.wikipedia.org/wiki/Jamaica",
     "population": 2717991,
     "date": 1388448000000,
@@ -1271,7 +1271,7 @@
   {
     "id": "142",
     "rank": 142,
-    "country": "Qatar‪",
+    "country": "Qatar",
     "countryArticle": "http://en.wikipedia.org/wiki/Qatar",
     "population": 2224583,
     "date": 1422662400000,
@@ -1280,7 +1280,7 @@
   {
     "id": "143",
     "rank": 143,
-    "country": "Lesotho‪",
+    "country": "Lesotho",
     "countryArticle": "http://en.wikipedia.org/wiki/Lesotho",
     "population": 2120000,
     "date": 1435708800000,
@@ -1289,7 +1289,7 @@
   {
     "id": "144",
     "rank": 144,
-    "country": "Namibia‪",
+    "country": "Namibia",
     "countryArticle": "http://en.wikipedia.org/wiki/Namibia",
     "population": 2113077,
     "date": 1314489600000,
@@ -1298,7 +1298,7 @@
   {
     "id": "145",
     "rank": 145,
-    "country": "Macedonia‪",
+    "country": "Macedonia",
     "countryArticle": "http://en.wikipedia.org/wiki/Macedonia",
     "population": 2065769,
     "date": 1388448000000,
@@ -1307,7 +1307,7 @@
   {
     "id": "146",
     "rank": 146,
-    "country": "Slovenia‪",
+    "country": "Slovenia",
     "countryArticle": "http://en.wikipedia.org/wiki/Slovenia",
     "population": 2065835,
     "date": 1425427200000,
@@ -1316,7 +1316,7 @@
   {
     "id": "147",
     "rank": 147,
-    "country": "Botswana‪",
+    "country": "Botswana",
     "countryArticle": "http://en.wikipedia.org/wiki/Botswana",
     "population": 2024904,
     "date": 1313971200000,
@@ -1325,7 +1325,7 @@
   {
     "id": "148",
     "rank": 148,
-    "country": "Latvia‪",
+    "country": "Latvia",
     "countryArticle": "http://en.wikipedia.org/wiki/Latvia",
     "population": 1986700,
     "date": 1422748800000,
@@ -1334,7 +1334,7 @@
   {
     "id": "149",
     "rank": 149,
-    "country": "The Gambia‪",
+    "country": "The Gambia",
     "countryArticle": "http://en.wikipedia.org/wiki/The%20Gambia",
     "population": 1882450,
     "date": 1365984000000,
@@ -1343,7 +1343,7 @@
   {
     "id": "150",
     "rank": 150,
-    "country": "Kosovo‪",
+    "country": "Kosovo",
     "countryArticle": "http://en.wikipedia.org/wiki/Kosovo",
     "population": 1816891,
     "date": 1388534400000,
@@ -1352,7 +1352,7 @@
   {
     "id": "151",
     "rank": 151,
-    "country": "Guinea-Bissau‪",
+    "country": "Guinea-Bissau",
     "countryArticle": "http://en.wikipedia.org/wiki/Guinea-Bissau",
     "population": 1788000,
     "date": 1435708800000,
@@ -1361,7 +1361,7 @@
   {
     "id": "152",
     "rank": 152,
-    "country": "Gabon‪",
+    "country": "Gabon",
     "countryArticle": "http://en.wikipedia.org/wiki/Gabon",
     "population": 1751000,
     "date": 1435708800000,
@@ -1370,7 +1370,7 @@
   {
     "id": "153",
     "rank": 153,
-    "country": "Equatorial Guinea‪",
+    "country": "Equatorial Guinea",
     "countryArticle": "http://en.wikipedia.org/wiki/Equatorial%20Guinea",
     "population": 1430000,
     "date": 1372636800000,
@@ -1379,7 +1379,7 @@
   {
     "id": "154",
     "rank": 154,
-    "country": "Trinidad and Tobago‪",
+    "country": "Trinidad and Tobago",
     "countryArticle": "http://en.wikipedia.org/wiki/Trinidad%20and%20Tobago",
     "population": 1328019,
     "date": 1294531200000,
@@ -1388,7 +1388,7 @@
   {
     "id": "155",
     "rank": 155,
-    "country": "Bahrain‪",
+    "country": "Bahrain",
     "countryArticle": "http://en.wikipedia.org/wiki/Bahrain",
     "population": 1316500,
     "date": 1404172800000,
@@ -1397,7 +1397,7 @@
   {
     "id": "156",
     "rank": 156,
-    "country": "Estonia‪",
+    "country": "Estonia",
     "countryArticle": "http://en.wikipedia.org/wiki/Estonia",
     "population": 1312252,
     "date": 1420070400000,
@@ -1406,7 +1406,7 @@
   {
     "id": "157",
     "rank": 157,
-    "country": "Mauritius‪",
+    "country": "Mauritius",
     "countryArticle": "http://en.wikipedia.org/wiki/Mauritius",
     "population": 1261208,
     "date": 1404172800000,
@@ -1415,7 +1415,7 @@
   {
     "id": "158",
     "rank": 158,
-    "country": "East Timor‪",
+    "country": "East Timor",
     "countryArticle": "http://en.wikipedia.org/wiki/East%20Timor",
     "population": 1212107,
     "date": 1404172800000,
@@ -1424,7 +1424,7 @@
   {
     "id": "159",
     "rank": 159,
-    "country": "Swaziland‪",
+    "country": "Swaziland",
     "countryArticle": "http://en.wikipedia.org/wiki/Swaziland",
     "population": 1106189,
     "date": 1404172800000,
@@ -1433,7 +1433,7 @@
   {
     "id": "160",
     "rank": 160,
-    "country": "Djibouti‪",
+    "country": "Djibouti",
     "countryArticle": "http://en.wikipedia.org/wiki/Djibouti",
     "population": 900000,
     "date": 1435708800000,
@@ -1442,7 +1442,7 @@
   {
     "id": "161",
     "rank": 161,
-    "country": "Fiji‪",
+    "country": "Fiji",
     "countryArticle": "http://en.wikipedia.org/wiki/Fiji",
     "population": 859178,
     "date": 1372636800000,
@@ -1451,7 +1451,7 @@
   {
     "id": "162",
     "rank": 162,
-    "country": "Cyprus‪",
+    "country": "Cyprus",
     "countryArticle": "http://en.wikipedia.org/wiki/Cyprus",
     "population": 858000,
     "date": 1388534400000,
@@ -1460,7 +1460,7 @@
   {
     "id": "163",
     "rank": 163,
-    "country": "Réunion (France)‪",
+    "country": "Réunion (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/R%C3%A9union%20(France)",
     "population": 844994,
     "date": 1388534400000,
@@ -1469,7 +1469,7 @@
   {
     "id": "164",
     "rank": 164,
-    "country": "Comoros‪",
+    "country": "Comoros",
     "countryArticle": "http://en.wikipedia.org/wiki/Comoros",
     "population": 763952,
     "date": 1404172800000,
@@ -1478,7 +1478,7 @@
   {
     "id": "165",
     "rank": 165,
-    "country": "Bhutan‪",
+    "country": "Bhutan",
     "countryArticle": "http://en.wikipedia.org/wiki/Bhutan",
     "population": 757870,
     "date": 1425427200000,
@@ -1487,7 +1487,7 @@
   {
     "id": "166",
     "rank": 166,
-    "country": "Guyana‪",
+    "country": "Guyana",
     "countryArticle": "http://en.wikipedia.org/wiki/Guyana",
     "population": 746900,
     "date": 1372636800000,
@@ -1496,7 +1496,7 @@
   {
     "id": "167",
     "rank": 167,
-    "country": "Macau (China)‪",
+    "country": "Macau (China)",
     "countryArticle": "http://en.wikipedia.org/wiki/Macau%20(China)",
     "population": 631000,
     "date": 1412035200000,
@@ -1505,7 +1505,7 @@
   {
     "id": "168",
     "rank": 168,
-    "country": "Montenegro‪",
+    "country": "Montenegro",
     "countryArticle": "http://en.wikipedia.org/wiki/Montenegro",
     "population": 620029,
     "date": 1301616000000,
@@ -1514,7 +1514,7 @@
   {
     "id": "169",
     "rank": 169,
-    "country": "Western Sahara‪",
+    "country": "Western Sahara",
     "countryArticle": "http://en.wikipedia.org/wiki/Western%20Sahara",
     "population": 604000,
     "date": 1435708800000,
@@ -1523,7 +1523,7 @@
   {
     "id": "170",
     "rank": 170,
-    "country": "Solomon Islands‪",
+    "country": "Solomon Islands",
     "countryArticle": "http://en.wikipedia.org/wiki/Solomon%20Islands",
     "population": 581344,
     "date": 1372636800000,
@@ -1532,7 +1532,7 @@
   {
     "id": "171",
     "rank": 171,
-    "country": "Luxembourg‪",
+    "country": "Luxembourg",
     "countryArticle": "http://en.wikipedia.org/wiki/Luxembourg",
     "population": 549700,
     "date": 1388448000000,
@@ -1541,7 +1541,7 @@
   {
     "id": "172",
     "rank": 172,
-    "country": "Suriname‪",
+    "country": "Suriname",
     "countryArticle": "http://en.wikipedia.org/wiki/Suriname",
     "population": 534189,
     "date": 1344816000000,
@@ -1550,7 +1550,7 @@
   {
     "id": "173",
     "rank": 173,
-    "country": "Cape Verde‪",
+    "country": "Cape Verde",
     "countryArticle": "http://en.wikipedia.org/wiki/Cape%20Verde",
     "population": 518467,
     "date": 1404172800000,
@@ -1559,7 +1559,7 @@
   {
     "id": "174",
     "rank": 174,
-    "country": "Transnistria‪",
+    "country": "Transnistria",
     "countryArticle": "http://en.wikipedia.org/wiki/Transnistria",
     "population": 505153,
     "date": 1388534400000,
@@ -1568,7 +1568,7 @@
   {
     "id": "175",
     "rank": 175,
-    "country": "Malta‪",
+    "country": "Malta",
     "countryArticle": "http://en.wikipedia.org/wiki/Malta",
     "population": 425384,
     "date": 1388448000000,
@@ -1577,7 +1577,7 @@
   {
     "id": "176",
     "rank": 176,
-    "country": "Guadeloupe (France)‪",
+    "country": "Guadeloupe (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/Guadeloupe%20(France)",
     "population": 405739,
     "date": 1356998400000,
@@ -1586,7 +1586,7 @@
   {
     "id": "177",
     "rank": 177,
-    "country": "Brunei‪",
+    "country": "Brunei",
     "countryArticle": "http://en.wikipedia.org/wiki/Brunei",
     "population": 393372,
     "date": 1308528000000,
@@ -1595,7 +1595,7 @@
   {
     "id": "178",
     "rank": 178,
-    "country": "Martinique (France)‪",
+    "country": "Martinique (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/Martinique%20(France)",
     "population": 386486,
     "date": 1356998400000,
@@ -1604,7 +1604,7 @@
   {
     "id": "179",
     "rank": 179,
-    "country": "The Bahamas‪",
+    "country": "The Bahamas",
     "countryArticle": "http://en.wikipedia.org/wiki/The%20Bahamas",
     "population": 368390,
     "date": 1372636800000,
@@ -1613,7 +1613,7 @@
   {
     "id": "180",
     "rank": 180,
-    "country": "Belize‪",
+    "country": "Belize",
     "countryArticle": "http://en.wikipedia.org/wiki/Belize",
     "population": 349728,
     "date": 1372636800000,
@@ -1622,7 +1622,7 @@
   {
     "id": "181",
     "rank": 181,
-    "country": "Maldives‪",
+    "country": "Maldives",
     "countryArticle": "http://en.wikipedia.org/wiki/Maldives",
     "population": 341256,
     "date": 1411171200000,
@@ -1631,7 +1631,7 @@
   {
     "id": "182",
     "rank": 182,
-    "country": "Iceland‪",
+    "country": "Iceland",
     "countryArticle": "http://en.wikipedia.org/wiki/Iceland",
     "population": 329040,
     "date": 1419984000000,
@@ -1640,7 +1640,7 @@
   {
     "id": "183",
     "rank": 183,
-    "country": "Northern Cyprus‪",
+    "country": "Northern Cyprus",
     "countryArticle": "http://en.wikipedia.org/wiki/Northern%20Cyprus",
     "population": 294906,
     "date": 1146355200000,
@@ -1649,7 +1649,7 @@
   {
     "id": "184",
     "rank": 184,
-    "country": "Barbados‪",
+    "country": "Barbados",
     "countryArticle": "http://en.wikipedia.org/wiki/Barbados",
     "population": 285000,
     "date": 1372636800000,
@@ -1658,7 +1658,7 @@
   {
     "id": "185",
     "rank": 185,
-    "country": "New Caledonia (France)‪",
+    "country": "New Caledonia (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/New%20Caledonia%20(France)",
     "population": 268767,
     "date": 1409011200000,
@@ -1667,7 +1667,7 @@
   {
     "id": "186",
     "rank": 186,
-    "country": "French Polynesia (France)‪",
+    "country": "French Polynesia (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/French%20Polynesia%20(France)",
     "population": 268270,
     "date": 1345593600000,
@@ -1676,7 +1676,7 @@
   {
     "id": "187",
     "rank": 187,
-    "country": "Vanuatu‪",
+    "country": "Vanuatu",
     "countryArticle": "http://en.wikipedia.org/wiki/Vanuatu",
     "population": 264652,
     "date": 1372636800000,
@@ -1685,7 +1685,7 @@
   {
     "id": "188",
     "rank": 188,
-    "country": "Abkhazia‪",
+    "country": "Abkhazia",
     "countryArticle": "http://en.wikipedia.org/wiki/Abkhazia",
     "population": 240705,
     "date": 1293840000000,
@@ -1694,7 +1694,7 @@
   {
     "id": "189",
     "rank": 189,
-    "country": "French Guiana (France)‪",
+    "country": "French Guiana (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/French%20Guiana%20(France)",
     "population": 239648,
     "date": 1325376000000,
@@ -1703,7 +1703,7 @@
   {
     "id": "190",
     "rank": 190,
-    "country": "Mayotte (France)‪",
+    "country": "Mayotte (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/Mayotte%20(France)",
     "population": 212645,
     "date": 1345507200000,
@@ -1712,7 +1712,7 @@
   {
     "id": "191",
     "rank": 191,
-    "country": "Samoa‪",
+    "country": "Samoa",
     "countryArticle": "http://en.wikipedia.org/wiki/Samoa",
     "population": 187820,
     "date": 1320624000000,
@@ -1721,7 +1721,7 @@
   {
     "id": "192",
     "rank": 192,
-    "country": "São Tomé and Príncipe‪",
+    "country": "São Tomé and Príncipe",
     "countryArticle": "http://en.wikipedia.org/wiki/S%C3%A3o%20Tom%C3%A9%20and%20Pr%C3%ADncipe",
     "population": 187356,
     "date": 1336867200000,
@@ -1730,7 +1730,7 @@
   {
     "id": "193",
     "rank": 193,
-    "country": "Saint Lucia‪",
+    "country": "Saint Lucia",
     "countryArticle": "http://en.wikipedia.org/wiki/Saint%20Lucia",
     "population": 185000,
     "date": 1435708800000,
@@ -1739,7 +1739,7 @@
   {
     "id": "194",
     "rank": 194,
-    "country": "Guam (U.S.)‪",
+    "country": "Guam (U.S.)",
     "countryArticle": "http://en.wikipedia.org/wiki/Guam%20(U.S.)",
     "population": 159358,
     "date": 1270080000000,
@@ -1748,7 +1748,7 @@
   {
     "id": "195",
     "rank": 195,
-    "country": "Curaçao (Netherlands)‪",
+    "country": "Curaçao (Netherlands)",
     "countryArticle": "http://en.wikipedia.org/wiki/Cura%C3%A7ao%20(Netherlands)",
     "population": 154843,
     "date": 1388534400000,
@@ -1757,7 +1757,7 @@
   {
     "id": "196",
     "rank": 196,
-    "country": "Saint Vincent and the Grenadines‪",
+    "country": "Saint Vincent and the Grenadines",
     "countryArticle": "http://en.wikipedia.org/wiki/Saint%20Vincent%20and%20the%20Grenadines",
     "population": 109000,
     "date": 1435708800000,
@@ -1766,7 +1766,7 @@
   {
     "id": "197",
     "rank": 197,
-    "country": "Aruba (Netherlands)‪",
+    "country": "Aruba (Netherlands)",
     "countryArticle": "http://en.wikipedia.org/wiki/Aruba%20(Netherlands)",
     "population": 107394,
     "date": 1414713600000,
@@ -1775,7 +1775,7 @@
   {
     "id": "198",
     "rank": 198,
-    "country": "Kiribati‪",
+    "country": "Kiribati",
     "countryArticle": "http://en.wikipedia.org/wiki/Kiribati",
     "population": 106461,
     "date": 1372636800000,
@@ -1784,7 +1784,7 @@
   {
     "id": "199",
     "rank": 199,
-    "country": "United States Virgin Islands (U.S.)‪",
+    "country": "United States Virgin Islands (U.S.)",
     "countryArticle": "http://en.wikipedia.org/wiki/United%20States%20Virgin%20Islands%20(U.S.)",
     "population": 106405,
     "date": 1270080000000,
@@ -1793,7 +1793,7 @@
   {
     "id": "200",
     "rank": 200,
-    "country": "Grenada‪",
+    "country": "Grenada",
     "countryArticle": "http://en.wikipedia.org/wiki/Grenada",
     "population": 103328,
     "date": 1305158400000,
@@ -1802,7 +1802,7 @@
   {
     "id": "201",
     "rank": 201,
-    "country": "Tonga‪",
+    "country": "Tonga",
     "countryArticle": "http://en.wikipedia.org/wiki/Tonga",
     "population": 103252,
     "date": 1322611200000,
@@ -1811,7 +1811,7 @@
   {
     "id": "202",
     "rank": 202,
-    "country": "Federated States of Micronesia‪",
+    "country": "Federated States of Micronesia",
     "countryArticle": "http://en.wikipedia.org/wiki/Federated%20States%20of%20Micronesia",
     "population": 101351,
     "date": 1372636800000,
@@ -1820,7 +1820,7 @@
   {
     "id": "203",
     "rank": 203,
-    "country": "Jersey (UK)‪",
+    "country": "Jersey (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Jersey%20(UK)",
     "population": 99000,
     "date": 1356912000000,
@@ -1829,7 +1829,7 @@
   {
     "id": "204",
     "rank": 204,
-    "country": "Seychelles‪",
+    "country": "Seychelles",
     "countryArticle": "http://en.wikipedia.org/wiki/Seychelles",
     "population": 89949,
     "date": 1372636800000,
@@ -1838,7 +1838,7 @@
   {
     "id": "205",
     "rank": 205,
-    "country": "Antigua and Barbuda‪",
+    "country": "Antigua and Barbuda",
     "countryArticle": "http://en.wikipedia.org/wiki/Antigua%20and%20Barbuda",
     "population": 86295,
     "date": 1306454400000,
@@ -1847,7 +1847,7 @@
   {
     "id": "206",
     "rank": 206,
-    "country": "Isle of Man (UK)‪",
+    "country": "Isle of Man (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Isle%20of%20Man%20(UK)",
     "population": 84497,
     "date": 1301184000000,
@@ -1856,7 +1856,7 @@
   {
     "id": "207",
     "rank": 207,
-    "country": "Andorra‪",
+    "country": "Andorra",
     "countryArticle": "http://en.wikipedia.org/wiki/Andorra",
     "population": 76949,
     "date": 1404172800000,
@@ -1865,7 +1865,7 @@
   {
     "id": "208",
     "rank": 208,
-    "country": "Dominica‪",
+    "country": "Dominica",
     "countryArticle": "http://en.wikipedia.org/wiki/Dominica",
     "population": 71293,
     "date": 1305331200000,
@@ -1874,7 +1874,7 @@
   {
     "id": "209",
     "rank": 209,
-    "country": "Bermuda (UK)‪",
+    "country": "Bermuda (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Bermuda%20(UK)",
     "population": 64237,
     "date": 1274313600000,
@@ -1883,7 +1883,7 @@
   {
     "id": "210",
     "rank": 210,
-    "country": "Guernsey (UK)‪",
+    "country": "Guernsey (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Guernsey%20(UK)",
     "population": 63085,
     "date": 1333152000000,
@@ -1892,7 +1892,7 @@
   {
     "id": "211",
     "rank": 211,
-    "country": "Marshall Islands‪",
+    "country": "Marshall Islands",
     "countryArticle": "http://en.wikipedia.org/wiki/Marshall%20Islands",
     "population": 56086,
     "date": 1372636800000,
@@ -1901,7 +1901,7 @@
   {
     "id": "212",
     "rank": 212,
-    "country": "Greenland (Denmark)‪",
+    "country": "Greenland (Denmark)",
     "countryArticle": "http://en.wikipedia.org/wiki/Greenland%20(Denmark)",
     "population": 55984,
     "date": 1420070400000,
@@ -1910,7 +1910,7 @@
   {
     "id": "213",
     "rank": 213,
-    "country": "Cayman Islands (UK)‪",
+    "country": "Cayman Islands (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Cayman%20Islands%20(UK)",
     "population": 55691,
     "date": 1356998400000,
@@ -1919,7 +1919,7 @@
   {
     "id": "214",
     "rank": 214,
-    "country": "American Samoa (U.S.)‪",
+    "country": "American Samoa (U.S.)",
     "countryArticle": "http://en.wikipedia.org/wiki/American%20Samoa%20(U.S.)",
     "population": 55519,
     "date": 1270080000000,
@@ -1928,7 +1928,7 @@
   {
     "id": "215",
     "rank": 215,
-    "country": "Saint Kitts and Nevis‪",
+    "country": "Saint Kitts and Nevis",
     "countryArticle": "http://en.wikipedia.org/wiki/Saint%20Kitts%20and%20Nevis",
     "population": 55000,
     "date": 1435708800000,
@@ -1937,7 +1937,7 @@
   {
     "id": "216",
     "rank": 216,
-    "country": "Northern Mariana Islands (U.S.)‪",
+    "country": "Northern Mariana Islands (U.S.)",
     "countryArticle": "http://en.wikipedia.org/wiki/Northern%20Mariana%20Islands%20(U.S.)",
     "population": 53883,
     "date": 1270080000000,
@@ -1946,7 +1946,7 @@
   {
     "id": "217",
     "rank": 217,
-    "country": "South Ossetia‪",
+    "country": "South Ossetia",
     "countryArticle": "http://en.wikipedia.org/wiki/South%20Ossetia",
     "population": 51547,
     "date": 1356998400000,
@@ -1955,7 +1955,7 @@
   {
     "id": "218",
     "rank": 218,
-    "country": "Faroe Islands (Denmark)‪",
+    "country": "Faroe Islands (Denmark)",
     "countryArticle": "http://en.wikipedia.org/wiki/Faroe%20Islands%20(Denmark)",
     "population": 48679,
     "date": 1417392000000,
@@ -1964,7 +1964,7 @@
   {
     "id": "219",
     "rank": 219,
-    "country": "Sint Maarten (Netherlands)‪",
+    "country": "Sint Maarten (Netherlands)",
     "countryArticle": "http://en.wikipedia.org/wiki/Sint%20Maarten%20(Netherlands)",
     "population": 37429,
     "date": 1262304000000,
@@ -1973,7 +1973,7 @@
   {
     "id": "220",
     "rank": 220,
-    "country": "Liechtenstein‪",
+    "country": "Liechtenstein",
     "countryArticle": "http://en.wikipedia.org/wiki/Liechtenstein",
     "population": 37132,
     "date": 1388448000000,
@@ -1982,7 +1982,7 @@
   {
     "id": "221",
     "rank": 221,
-    "country": "Monaco‪",
+    "country": "Monaco",
     "countryArticle": "http://en.wikipedia.org/wiki/Monaco",
     "population": 36950,
     "date": 1388448000000,
@@ -1991,7 +1991,7 @@
   {
     "id": "222",
     "rank": 222,
-    "country": "Collectivity of Saint Martin (France)‪",
+    "country": "Collectivity of Saint Martin (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/Collectivity%20of%20Saint%20Martin%20(France)",
     "population": 35742,
     "date": 1325376000000,
@@ -2000,7 +2000,7 @@
   {
     "id": "223",
     "rank": 223,
-    "country": "San Marino‪",
+    "country": "San Marino",
     "countryArticle": "http://en.wikipedia.org/wiki/San%20Marino",
     "population": 32789,
     "date": 1419984000000,
@@ -2009,7 +2009,7 @@
   {
     "id": "224",
     "rank": 224,
-    "country": "Turks and Caicos Islands (UK)‪",
+    "country": "Turks and Caicos Islands (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Turks%20and%20Caicos%20Islands%20(UK)",
     "population": 31458,
     "date": 1327449600000,
@@ -2018,7 +2018,7 @@
   {
     "id": "225",
     "rank": 225,
-    "country": "Gibraltar (UK)‪",
+    "country": "Gibraltar (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Gibraltar%20(UK)",
     "population": 30001,
     "date": 1356912000000,
@@ -2027,7 +2027,7 @@
   {
     "id": "226",
     "rank": 226,
-    "country": "Åland Islands (Finland)‪",
+    "country": "Åland Islands (Finland)",
     "countryArticle": "http://en.wikipedia.org/wiki/%C3%85land%20Islands%20(Finland)",
     "population": 28875,
     "date": 1412035200000,
@@ -2036,7 +2036,7 @@
   {
     "id": "227",
     "rank": 227,
-    "country": "British Virgin Islands (UK)‪",
+    "country": "British Virgin Islands (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/British%20Virgin%20Islands%20(UK)",
     "population": 28054,
     "date": 1278892800000,
@@ -2045,7 +2045,7 @@
   {
     "id": "228",
     "rank": 228,
-    "country": "Caribbean Netherlands (Netherlands)‪",
+    "country": "Caribbean Netherlands (Netherlands)",
     "countryArticle": "http://en.wikipedia.org/wiki/Caribbean%20Netherlands%20(Netherlands)",
     "population": 23296,
     "date": 1356998400000,
@@ -2054,7 +2054,7 @@
   {
     "id": "229",
     "rank": 229,
-    "country": "Palau‪",
+    "country": "Palau",
     "countryArticle": "http://en.wikipedia.org/wiki/Palau",
     "population": 20901,
     "date": 1372636800000,
@@ -2063,7 +2063,7 @@
   {
     "id": "230",
     "rank": 230,
-    "country": "Cook Islands (New Zealand)‪",
+    "country": "Cook Islands (New Zealand)",
     "countryArticle": "http://en.wikipedia.org/wiki/Cook%20Islands%20(New%20Zealand)",
     "population": 14974,
     "date": 1322697600000,
@@ -2072,7 +2072,7 @@
   {
     "id": "231",
     "rank": 231,
-    "country": "Anguilla (UK)‪",
+    "country": "Anguilla (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Anguilla%20(UK)",
     "population": 13452,
     "date": 1305072000000,
@@ -2081,7 +2081,7 @@
   {
     "id": "232",
     "rank": 232,
-    "country": "Wallis and Futuna (France)‪",
+    "country": "Wallis and Futuna (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/Wallis%20and%20Futuna%20(France)",
     "population": 13135,
     "date": 1372636800000,
@@ -2090,7 +2090,7 @@
   {
     "id": "233",
     "rank": 233,
-    "country": "Tuvalu‪",
+    "country": "Tuvalu",
     "countryArticle": "http://en.wikipedia.org/wiki/Tuvalu",
     "population": 11323,
     "date": 1372636800000,
@@ -2099,7 +2099,7 @@
   {
     "id": "234",
     "rank": 234,
-    "country": "Nauru‪",
+    "country": "Nauru",
     "countryArticle": "http://en.wikipedia.org/wiki/Nauru",
     "population": 10084,
     "date": 1319932800000,
@@ -2108,7 +2108,7 @@
   {
     "id": "235",
     "rank": 235,
-    "country": "Saint Barthélemy (France)‪",
+    "country": "Saint Barthélemy (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/Saint%20Barth%C3%A9lemy%20(France)",
     "population": 9131,
     "date": 1325376000000,
@@ -2117,7 +2117,7 @@
   {
     "id": "236",
     "rank": 236,
-    "country": "Saint Pierre and Miquelon (France)‪",
+    "country": "Saint Pierre and Miquelon (France)",
     "countryArticle": "http://en.wikipedia.org/wiki/Saint%20Pierre%20and%20Miquelon%20(France)",
     "population": 6069,
     "date": 1325376000000,
@@ -2126,7 +2126,7 @@
   {
     "id": "237",
     "rank": 237,
-    "country": "Montserrat (UK)‪",
+    "country": "Montserrat (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Montserrat%20(UK)",
     "population": 4922,
     "date": 1305158400000,
@@ -2135,7 +2135,7 @@
   {
     "id": "238",
     "rank": 238,
-    "country": "Saint Helena, Ascension and Tristan da Cunha (UK)‪",
+    "country": "Saint Helena, Ascension and Tristan da Cunha (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Saint%20Helena%2C%20Ascension%20and%20Tristan%20da%20Cunha%20(UK)",
     "population": 4000,
     "date": 1435708800000,
@@ -2144,7 +2144,7 @@
   {
     "id": "239",
     "rank": 239,
-    "country": "Falkland Islands (UK)‪",
+    "country": "Falkland Islands (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Falkland%20Islands%20(UK)",
     "population": 3000,
     "date": 1435708800000,
@@ -2153,7 +2153,7 @@
   {
     "id": "240",
     "rank": 240,
-    "country": "Svalbard and Jan Mayen (Norway)‪",
+    "country": "Svalbard and Jan Mayen (Norway)",
     "countryArticle": "http://en.wikipedia.org/wiki/Svalbard%20and%20Jan%20Mayen%20(Norway)",
     "population": 2562,
     "date": 1404172800000,
@@ -2162,7 +2162,7 @@
   {
     "id": "241",
     "rank": 241,
-    "country": "Norfolk Island (Australia)‪",
+    "country": "Norfolk Island (Australia)",
     "countryArticle": "http://en.wikipedia.org/wiki/Norfolk%20Island%20(Australia)",
     "population": 2302,
     "date": 1312848000000,
@@ -2171,7 +2171,7 @@
   {
     "id": "242",
     "rank": 242,
-    "country": "Christmas Island (Australia)‪",
+    "country": "Christmas Island (Australia)",
     "countryArticle": "http://en.wikipedia.org/wiki/Christmas%20Island%20(Australia)",
     "population": 2072,
     "date": 1312848000000,
@@ -2180,7 +2180,7 @@
   {
     "id": "243",
     "rank": 243,
-    "country": "Niue (New Zealand)‪",
+    "country": "Niue (New Zealand)",
     "countryArticle": "http://en.wikipedia.org/wiki/Niue%20(New%20Zealand)",
     "population": 1613,
     "date": 1315612800000,
@@ -2189,7 +2189,7 @@
   {
     "id": "244",
     "rank": 244,
-    "country": "Tokelau (NZ)‪",
+    "country": "Tokelau (NZ)",
     "countryArticle": "http://en.wikipedia.org/wiki/Tokelau%20(NZ)",
     "population": 1411,
     "date": 1318896000000,
@@ -2198,7 +2198,7 @@
   {
     "id": "245",
     "rank": 245,
-    "country": "Vatican City‪",
+    "country": "Vatican City",
     "countryArticle": "http://en.wikipedia.org/wiki/Vatican%20City",
     "population": 839,
     "date": 1341100800000,
@@ -2207,7 +2207,7 @@
   {
     "id": "246",
     "rank": 246,
-    "country": "Cocos (Keeling) Islands (Australia)‪",
+    "country": "Cocos (Keeling) Islands (Australia)",
     "countryArticle": "http://en.wikipedia.org/wiki/Cocos%20(Keeling)%20Islands%20(Australia)",
     "population": 550,
     "date": 1312848000000,
@@ -2216,7 +2216,7 @@
   {
     "id": "247",
     "rank": 247,
-    "country": "Pitcairn Islands (UK)‪",
+    "country": "Pitcairn Islands (UK)",
     "countryArticle": "http://en.wikipedia.org/wiki/Pitcairn%20Islands%20(UK)",
     "population": 56,
     "date": 1356998400000,
