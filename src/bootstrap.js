@@ -1,7 +1,15 @@
-define(['knockout', 'ko-grid-bundle', './data/countries-by-population/data-source-factory', './example'],
-    function (ko, bundle, countriesByPopulation) {
-        ko.applyBindings({
-            countriesByPopulation: countriesByPopulation
+define([
+        'domReady',
+        'knockout',
+        './data/countries-by-population/data-source-factory',
+        './example',
+        'ko-grid-bundle'
+    ],
+    function (domReady, ko, countriesByPopulation) {
+        domReady(function () {
+            ko.applyBindings({
+                countriesByPopulation: countriesByPopulation
+            });
         });
     }
 );
