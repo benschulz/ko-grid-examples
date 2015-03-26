@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>CSS Naked Day ready &mdash; Examples &mdash; ko-grid</title>
+    <title>Basic Functionality &mdash; Examples &mdash; ko-grid</title>
     <script type="text/javascript" src="../../require.js"></script>
     <script type="text/javascript" src="../../ko-grid-examples.js"></script>
     <link rel="stylesheet" href="../../ko-grid-examples.css">
@@ -10,20 +10,35 @@
     <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
 </head>
 <body data-bind="koGridExample: '../../'">
-<h1>CSS Naked Day ready</h1>
+<h1>Basic Functionality</h1>
 
 <p>
-    This is not <em>really</em> a feature, but rather a demonstration of code quality. Underneath all those fancy styles a
-    ko-grid is just a single <code>table</code>; consisting of a <code>thead</code>, a <code>tbody</code> and a <code>tfoot</code>.
-    And that's just what you see when all those styles fall away. Go ahead, try it out.
+    The <a href="https://github.com/benschulz/ko-grid-filtering">filtering extension</a> displays a row of search boxes
+    below the column headers. Entering a text into a search box will filter rows based on whether they match the search
+    term in that column.
 </p>
 
-<div data-bind="koGridExampleCranks: ['css-nudity']"></div>
+<p>
+    Search terms are interpreted as follows.
+</p>
+<ul>
+    <li>Iff the search term contains no upper case letters, a case insensitive search is performed.</li>
+    <li>An asterisk (<kbd>*</kbd>) matches any substring.</li>
+    <li>
+        A search term containing no asterisks implies
+        <ul>
+            <li>a substring search and</li>
+            <li>a loose "hump search" (<kbd>CR</kbd> is matched by "Czech Republic" and "Costa Rica").</li>
+        </ul>
+    </li>
+</ul>
+
+<div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="css-nudity" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'css-nudity-config',
+<div id="filtering-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'filtering-basic-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [
@@ -33,16 +48,7 @@
         { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
         { id: 'date', width: '150px', label: 'Date' }
     ],
-    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }],
-    extensions: {
-        aggregate: [
-            { population: 'sum', percentage: 'sum' },
-            { population: 'minimum' },
-            { population: 'average', percentage: 'average' },
-            { population: 'maximum' }
-        ],
-        links: { country: { uri: 'countryArticle' } }
-    }
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }]
 }">
 </div>
 
@@ -52,5 +58,6 @@
         <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
     </dd>
 </dl>
+
 </body>
 </html>

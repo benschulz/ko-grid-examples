@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Large Data Sets &mdash; Examples &mdash; ko-grid</title>
+    <script type="text/javascript" src="../../require.js"></script>
+    <script type="text/javascript" src="../../ko-grid-examples.js"></script>
+    <link rel="stylesheet" href="../../ko-grid-examples.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-tweaks.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
+</head>
+<body data-bind="koGridExample: '../../'">
+<h1>Large Data Sets</h1>
+
+<p>
+    The grid can display fairly large data sets. Below is a table containing close to 8,000 entries. While it is
+    technically supported, displaying more than a couple thousand entries negatively impacts the user experience.
+    For instance filtering and sorting become sluggish. For this reason large data sets are discouraged.
+</p>
+
+<h2>Example: Some Unicode Characters</h2>
+
+<div id="large-data-set-config" class="fixed-height variable-width grid" data-bind="grid: {
+    config: 'large-data-set-config',
+    dataSource: unicodeCharacters(),
+    primaryKey: 'id',
+    columns: [
+        { id: 'character', width: '80px', label: 'Character' },
+        { id: 'name', width: '400px', label: 'Unicode Name' },
+        { id: 'block', width: '300px', label: 'Unicode Block' },
+        { id: 'htmlEntities', width: '300px', label: 'HTML Entities' }
+    ]
+}">
+</div>
+
+</body>
+</html>

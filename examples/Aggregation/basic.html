@@ -2,8 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Aggregation &mdash; Examples &mdash; ko-grid</title>
-
+    <title>Basic Functionality &mdash; Examples &mdash; ko-grid</title>
     <script type="text/javascript" src="../../require.js"></script>
     <script type="text/javascript" src="../../ko-grid-examples.js"></script>
     <link rel="stylesheet" href="../../ko-grid-examples.css">
@@ -11,24 +10,25 @@
     <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
 </head>
 <body data-bind="koGridExample: '../../'">
-<h1>Aggregation</h1>
+<h1>Basic Functionality</h1>
 
 <p>
-    The aggregation extension calculates various aggregate values and displays them in the table footer. Supported
-    aggregates are the sum, the average as well as the minimum and maximum value.
+    The <a href="https://github.com/benschulz/ko-grid-aggregate">aggregation extension</a> calculates various
+    aggregate values and displays them in the table footer. Supported aggregates are the sum, the average as
+    well as the minimum and maximum value.
 </p>
 
 <div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="sample" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'ko-grid-sample-config',
+<div id="aggregation-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'aggregation-basic-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [
         { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
-        { id: 'country', width: '400px', label: 'Country (or dependent territory)\u202A' },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
         { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
         { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
         { id: 'date', width: '150px', label: 'Date' }
@@ -40,8 +40,7 @@
             { population: 'minimum' },
             { population: 'average', percentage: 'average' },
             { population: 'maximum' }
-        ],
-        links: { country: { uri: 'countryArticle' } }
+        ]
     }
 }">
 </div>

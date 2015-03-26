@@ -7,16 +7,60 @@
     "title": "Sizing and Scrolling",
     "elements": [
       {
+        "title": "Auto Height",
+        "filename": "auto-height.html"
+      },
+      {
+        "title": "Fixed Height",
+        "filename": "fixed-height.html"
+      },
+      {
         "title": "Content Width",
         "filename": "content-width.html"
       },
       {
         "title": "Container Width",
         "filename": "container-width.html"
+      }
+    ]
+  },
+  {
+    "title": "Column Scaling",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
       },
       {
-        "title": "Auto Height",
-        "filename": "auto-height.html"
+        "title": "Resize Detection",
+        "filename": "resize-detection.html"
+      }
+    ]
+  },
+  {
+    "title": "Column Resizing",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      }
+    ]
+  },
+  {
+    "title": "Sorting",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      }
+    ]
+  },
+  {
+    "title": "Filtering",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
       }
     ]
   },
@@ -24,8 +68,51 @@
     "title": "Aggregation",
     "elements": [
       {
-        "title": "Aggregation",
-        "filename": "aggregation.html"
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      },
+      {
+        "title": "Filtering",
+        "filename": "filtering.html"
+      }
+    ]
+  },
+  {
+    "title": "Full Screen",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      },
+      {
+        "title": "Column Scaling",
+        "filename": "column-scaling.html"
+      },
+      {
+        "title": "Column Resizing",
+        "filename": "column-resizing.html"
+      }
+    ]
+  },
+  {
+    "title": "Export",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      },
+      {
+        "title": "Filtering/Sorting",
+        "filename": "filtering-sorting.html"
+      }
+    ]
+  },
+  {
+    "title": "Links",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
       }
     ]
   },
@@ -35,6 +122,10 @@
       {
         "title": "CSS Naked Day ready",
         "filename": "css-nudity.html"
+      },
+      {
+        "title": "Large Data Sets",
+        "filename": "large-datasets.html"
       },
       {
         "title": "Optional RequireJS Support",

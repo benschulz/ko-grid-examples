@@ -24,21 +24,18 @@
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="sample" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'ko-grid-sample-config',
+<div id="no-requirejs" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'default-config',
     dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [
         { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
-        { id: 'country', width: '400px', label: 'Country (or dependent territory)\u202A' },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
         { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
         { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
         { id: 'date', width: '150px', label: 'Date' }
     ],
-    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }],
-    extensions: {
-        links: { country: { uri: 'countryArticle' } }
-    }
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }]
 }">
 </div>
 
