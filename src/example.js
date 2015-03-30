@@ -133,6 +133,7 @@ define(['knockout', 'json!dist/examples/examples.json'], function (ko, examples)
 
     ko.bindingHandlers.koGridExampleCranks = {
         init: function (element, valueAccessor) {
+            element.classList.add('cranks');
             valueAccessor().forEach(function (crank) {
                 cranks[crank](element);
             })

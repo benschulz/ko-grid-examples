@@ -209,6 +209,10 @@ module.exports = function (grunt) {
                     'bower_components/knockout/dist/knockout.js',
                     'bower_components/ko-grid-bundle/dist/ko-grid-bundle.css',
                     'bower_components/ko-grid-bundle/dist/ko-grid-bundle.js',
+                    'bower_components/octicons/octicons/octicons.eot',
+                    'bower_components/octicons/octicons/octicons.svg',
+                    'bower_components/octicons/octicons/octicons.ttf',
+                    'bower_components/octicons/octicons/octicons.woff',
                     'bower_components/requirejs/require.js'
                 ],
                 dest: 'dist/'

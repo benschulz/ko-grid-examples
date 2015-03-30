@@ -123,15 +123,64 @@ dd {
   min-width: 22em;
 }
 
+.cranks {
+  margin: 1em 0;
+}
+
 .cranks label {
   display: inline-block;
   width: 200px;
 }
 
-.known-issue {
-  margin: -5px;
-  padding: 5px;
-  border: 1px solid rgb(140, 0, 0);
+.infobox(@color) {
+  position: relative;
+  padding: 1em 1em 1em calc(10px + 32px + 1em);
+  border: 1px solid @color;
   border-radius: 8px;
-  background: rgba(140, 0, 0, 0.15);
+  background: fade(@color, 15%);
 }
+
+@font-face {
+  font-family: 'octicons';
+  src: url('./octicons.eot?#iefix&v=bed1e400746387e7e6c82072efdfad6d6d906eb5') format('embedded-opentype'), url('./octicons.woff?v=bed1e400746387e7e6c82072efdfad6d6d906eb5') format('woff'), url('./octicons.ttf?v=bed1e400746387e7e6c82072efdfad6d6d906eb5') format('truetype'), url('./octicons.svg?v=bed1e400746387e7e6c82072efdfad6d6d906eb5#octicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.infobox-icon(@content) {
+  position: absolute;
+  left: (14px);
+  top: calc(50% - (32px / 2));
+  display: inline-block;
+  width: 32px;
+  text-align: center;
+  font: normal normal normal 32px/1 octicons;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: @content;
+}
+
+.info {
+  .infobox(#2783C4);
+}
+
+.info:before {
+  .infobox-icon("\f059");
+  color: #2783C4;
+}
+
+.known-issue {
+  .infobox(#8C0000);
+}
+
+.known-issue:before {
+  .infobox-icon("\f026");
+  color: #8C0000;
+}
+
