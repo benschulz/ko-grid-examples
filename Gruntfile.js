@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         // ko-grid dependencies
         'knockout': 'bower_components/knockout/dist/knockout',
         // ko-grid
-        'ko-grid-bundle': 'bower_components/ko-grid-bundle/dist/ko-grid-bundle.debug',
+        'ko-grid-bundle': 'bower_components/ko-grid-bundle/dist/ko-grid-bundle',
         'ko-grid': 'empty:', // included in ko-grid-bundle
         'ko-data-source': 'empty:', // included in ko-grid-bundle
         // shared dependencies
