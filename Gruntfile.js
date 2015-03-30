@@ -234,7 +234,11 @@ module.exports = function (grunt) {
         },
         less: {
             default: {
-                options: {paths: ['node_modules/atom-light-syntax/styles/']},
+                options: {
+                    paths: ['node_modules/atom-light-syntax/styles/'],
+                    strictMath: true,
+                    strictUnits: true
+                },
                 files: {
                     'dist/ko-grid-examples.css': [
                         'bower_components/normalize-css/normalize.css',
