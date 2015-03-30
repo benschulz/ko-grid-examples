@@ -84,11 +84,11 @@ module.exports = function (grunt) {
                 return fs.statSync(path.join(sourceDirectory, n)).isDirectory();
             }));
 
-        var examples = generateExampleCategory(sourceDirectory, destinationDirectory, 1, mode);
+        var examples = generateExampleCategory(sourceDirectory, destinationDirectory, [], mode);
         categories.forEach(function (c) {
             examples.push({
                 title: c,
-                elements: generateExampleCategory(path.join(sourceDirectory, c), path.join(destinationDirectory, c), 2, mode)
+                elements: generateExampleCategory(path.join(sourceDirectory, c), path.join(destinationDirectory, c), [c], mode)
             });
         });
 
@@ -110,7 +110,7 @@ module.exports = function (grunt) {
         return copy;
     }
 
-    function generateExampleCategory(sourceDirectory, destinationDirectory, depth, mode) {
+    function generateExampleCategory(sourceDirectory, destinationDirectory, categories, mode) {
         var dev = mode === 'development';
         var examples = [];
 
@@ -136,9 +136,10 @@ module.exports = function (grunt) {
                 + 'head' + (hasHead ? yes : no) + ' and body' + (hasBody ? yes : no) + ' or none of them.');
 
             var titleInHeading = /<h1[^>]*>([\s\S]*)<\/h1>/i.exec(content)[1];
-            var expectedTitle = titleInHeading + ' &mdash; Examples &mdash; ko-grid';
+            var expectedTitle = [titleInHeading].concat(categories).concat(['Examples', 'ko-grid']).join(' &mdash; ');
 
             if (wrap) {
+                var depth = categories.length + 1;
                 content = [
                     '<!DOCTYPE html>',
                     '<html>',
