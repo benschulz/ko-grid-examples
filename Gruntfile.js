@@ -52,11 +52,16 @@ module.exports = function (grunt) {
                     location: path.join('bower_components/ko-grid-bundle', path.dirname(bundlePackages[p])),
                     main: path.basename(bundlePackages[p])
                 };
-            }));
+            }))
+            .concat([{
+                name: 'data',
+                location: '$baseUrl./src/data',
+                main: 'whatever'
+            }]);
 
         fs.writeFileSync('dist/rjsconfig.js', [
             'require.config({',
-            '  baseUrl: (function(s) { return s.substring(0, s.length - 12) + \'../\'; })(document.querySelector(\'script[src$="rjsconfig.js"]\').src),',
+            '  baseUrl: "$baseUrl",',
             '  paths: ' + JSON.stringify(paths, null, '  ') + ',',
             '  map: { \'*\': { \'req\': \'require\' } },',
             '  packages: ' + JSON.stringify(devPackages, null, '  '),
@@ -64,7 +69,7 @@ module.exports = function (grunt) {
             '',
             'require([\'ko-grid-examples\']);',
             ''
-        ].join('\n'));
+        ].join('\n').replace(/\$baseUrl/g, '"+(function(s) { return s.substring(0, s.length - 12) + \'../\'; })(document.querySelector(\'script[src$="rjsconfig.js"]\').src)+"'));
     });
 
     grunt.registerTask('generate-examples', function (mode) {
@@ -216,6 +221,12 @@ module.exports = function (grunt) {
                     'bower_components/requirejs/require.js'
                 ],
                 dest: 'dist/'
+            },
+            data: {
+                expand: true,
+                flatten: true,
+                src: ['src/data/**/*.json'],
+                dest: 'dist/data/'
             }
         },
         less: {
@@ -238,7 +249,6 @@ module.exports = function (grunt) {
                     out: 'dist/ko-grid-examples.js',
                     include: configModules(),
                     insertRequire: configModules(),
-                    stubModules: ['text', 'json'],
                     paths: paths,
                     packages: packages(),
                     optimize: 'none',

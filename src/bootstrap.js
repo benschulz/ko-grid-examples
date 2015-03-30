@@ -2,8 +2,8 @@ define([
         'domReady',
         'es6-promise',
         'knockout',
-        './data/countries-by-population/data-source-factory',
-        './data/unicode-characters/data-source-factory',
+        './data/countries-by-population',
+        './data/unicode-characters',
         './example',
         'ko-grid-bundle'
     ],
