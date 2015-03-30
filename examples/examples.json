@@ -65,6 +65,15 @@
     ]
   },
   {
+    "title": "Virtualization",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      }
+    ]
+  },
+  {
     "title": "Aggregation",
     "elements": [
       {
@@ -113,6 +122,23 @@
       {
         "title": "Basic Functionality",
         "filename": "basic.html"
+      }
+    ]
+  },
+  {
+    "title": "Remote Data Source",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      },
+      {
+        "title": "Virtualization",
+        "filename": "virtualization.html"
+      },
+      {
+        "title": "Aggregation",
+        "filename": "aggregate.html"
       }
     ]
   },

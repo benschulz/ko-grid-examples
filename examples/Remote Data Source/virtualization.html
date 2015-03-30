@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Basic Functionality &mdash; Sorting &mdash; Examples &mdash; ko-grid</title>
+    <title>Virtualization &mdash; Remote Data Source &mdash; Examples &mdash; ko-grid</title>
     <script type="text/javascript" src="../../require.js"></script>
     <script type="text/javascript" src="../../ko-grid-examples.js"></script>
     <link rel="stylesheet" href="../../ko-grid-examples.css">
@@ -10,21 +10,21 @@
     <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
 </head>
 <body data-bind="koGridExample: '../../'">
-<h1>Basic Functionality</h1>
+<h1>Virtualization</h1>
 
 <p>
-    The <a href="https://github.com/benschulz/ko-grid-sorting">sorting extension</a> lets the user sort by the
-    data set by a specific column. To do that, simply click on the corresponding column header. Click again,
-    to toggle the sorting direction.
+    As stated in the <a href="../Virtualization/basic.html">virtualization example</a>, virtualization reduces the amount
+    of data that needs to be requested from the server. This example is a demonstration of just that. To see for yourself,
+    scroll through the grid and inspect the generated responses by checking <em>Show Mock IO</em>.
 </p>
 
-<div data-bind="koGridExampleCranks: []"></div>
+<div data-bind="koGridExampleCranks: ['io']"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="sorting-basic" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'sorting-basic-config',
-    dataSource: countriesByPopulation(),
+<div id="remote-virtualization" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'remote-virtualization-config',
+    dataSource: countriesByPopulation.remote({ io: io }),
     primaryKey: 'id',
     columns: [
         { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },

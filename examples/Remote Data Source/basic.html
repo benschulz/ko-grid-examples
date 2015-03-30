@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Basic Functionality &mdash; Sorting &mdash; Examples &mdash; ko-grid</title>
+    <title>Basic Functionality &mdash; Remote Data Source &mdash; Examples &mdash; ko-grid</title>
     <script type="text/javascript" src="../../require.js"></script>
     <script type="text/javascript" src="../../ko-grid-examples.js"></script>
     <link rel="stylesheet" href="../../ko-grid-examples.css">
@@ -13,18 +13,25 @@
 <h1>Basic Functionality</h1>
 
 <p>
-    The <a href="https://github.com/benschulz/ko-grid-sorting">sorting extension</a> lets the user sort by the
-    data set by a specific column. To do that, simply click on the corresponding column header. Click again,
-    to toggle the sorting direction.
+    Oftentimes entry counts are very large, making it impractical to have all entries in a client side data source.
+    For this purpose, the <a href="https://github.com/benschulz/ko-data-source">data-source module</a> offers a
+    <code>ServerSideDataSource</code>. The server side data source only requests data which is required.
 </p>
 
-<div data-bind="koGridExampleCranks: []"></div>
+<p class="info">
+    <strong>Note</strong>: How requested data is procured is defined via the strategy pattern. The strategy is given
+    a <code>Query</code>, consisting of a (serializable) predicate, a (serializable) comparator, an offset and limit;
+    how these are translated into a result set is entirely up to you. This example page for instance does not request
+    data from an actual server, but simply computes the result on the client side and returns it with a small delay.
+</p>
+
+<div data-bind="koGridExampleCranks: ['io']"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="sorting-basic" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'sorting-basic-config',
-    dataSource: countriesByPopulation(),
+<div id="remote-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'remote-basic-config',
+    dataSource: countriesByPopulation.remote({ io: io }),
     primaryKey: 'id',
     columns: [
         { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },

@@ -470,16 +470,93 @@ dd {
   margin: 0;
   min-width: 22em;
 }
+.vertically-resizable {
+  position: relative;
+  border-bottom: 8px solid #EEE;
+}
+.vertically-resizable:after {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  margin-left: -20px;
+  width: 40px;
+  height: 8px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSI2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBpZD0iYSIgc3Ryb2tlPSIjQkJCIiBkPSJNMCAxaDEiLz48dXNlIHhsaW5rOmhyZWY9IiNhIiB5PSIyIi8+PHVzZSB4bGluazpocmVmPSIjYSIgeT0iNCIvPjwvc3ZnPg==);
+  content: "";
+}
+.vertically-resizable:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  content: "";
+  cursor: row-resize;
+}
+.cranks {
+  margin: 1em 0;
+}
 .cranks label {
   display: inline-block;
   width: 200px;
 }
+@font-face {
+  font-family: 'octicons';
+  src: url('octicons.eot?#iefix&v=bed1e400746387e7e6c82072efdfad6d6d906eb5') format('embedded-opentype'), url('octicons.woff?v=bed1e400746387e7e6c82072efdfad6d6d906eb5') format('woff'), url('octicons.ttf?v=bed1e400746387e7e6c82072efdfad6d6d906eb5') format('truetype'), url('octicons.svg?v=bed1e400746387e7e6c82072efdfad6d6d906eb5#octicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.info {
+  position: relative;
+  padding: 1em 1em 1em calc(10px + 32px + 1em);
+  border: 1px solid #2783c4;
+  border-radius: 8px;
+  background: rgba(39, 131, 196, 0.15);
+}
+.info:before {
+  position: absolute;
+  left: 14px;
+  top: calc(50% - (32px / 2));
+  display: inline-block;
+  width: 32px;
+  text-align: center;
+  font: normal normal normal 32px/1 octicons;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: "\f059";
+  color: #2783C4;
+}
 .known-issue {
-  margin: -5px;
-  padding: 5px;
+  position: relative;
+  padding: 1em 1em 1em calc(10px + 32px + 1em);
   border: 1px solid #8c0000;
   border-radius: 8px;
   background: rgba(140, 0, 0, 0.15);
+}
+.known-issue:before {
+  position: absolute;
+  left: 14px;
+  top: calc(50% - (32px / 2));
+  display: inline-block;
+  width: 32px;
+  text-align: center;
+  font: normal normal normal 32px/1 octicons;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: "\f026";
+  color: #8C0000;
 }
 
 atom-text-editor,
