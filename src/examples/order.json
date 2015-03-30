@@ -5,9 +5,11 @@
   "Column Resizing",
   "Sorting",
   "Filtering",
+  "Virtualization",
   "Aggregation",
   "Full Screen",
   "Export",
   "Links",
+  "Remote Data Source",
   "Other Stuff"
 ]

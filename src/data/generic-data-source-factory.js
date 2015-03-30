@@ -40,7 +40,12 @@ define(['knockout', 'ko-data-source', 'stringifyable'], function (ko, dataSource
             var observables = new dataSource.ObservableEntries(idSelector, observableStateTransitioner);
             return new dataSource.ServerSideDataSource(idSelector, observables, {
                 issue: function (query) {
-                    io.logRequest(JSON.stringify(query, stringifyable.stringifyReplacer, '  '));
+                    io.logRequest(JSON.stringify({
+                        predicate: query.predicate,
+                        comparator: query.comparator,
+                        offset: query.offset,
+                        limit: query.limit,
+                    }, stringifyable.stringifyReplacer, '  '));
 
                     return new Promise(function (resolve) {
                         window.setTimeout(function () {
@@ -73,7 +78,6 @@ define(['knockout', 'ko-data-source', 'stringifyable'], function (ko, dataSource
                             }
 
                             io.logResponse(JSON.stringify(result, stringifyable.stringifyReplacer, '  '));
-                            window.console.log("Mock Server Response: ", JSON.stringify(result, null, '  '));
 
                             result.values = dataSource.streams.streamArray(clipped);
                             resolve(result);

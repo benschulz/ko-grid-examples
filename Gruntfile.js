@@ -37,7 +37,9 @@ module.exports = function (grunt) {
         // ko-grid
         'ko-grid-bundle': 'bower_components/ko-grid-bundle/dist/ko-grid-bundle.debug',
         'ko-grid': 'empty:', // included in ko-grid-bundle
-        'ko-data-source': 'empty:' // included in ko-grid-bundle
+        'ko-data-source': 'empty:', // included in ko-grid-bundle
+        // shared dependencies
+        'stringifyable': 'bower_components/stringifyable/dist/stringifyable'
     };
 
     grunt.registerTask('generate-rjs-config', function () {

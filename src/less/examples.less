@@ -123,6 +123,32 @@ dd {
   min-width: 22em;
 }
 
+.vertically-resizable {
+  position: relative;
+  border-bottom: 8px solid #EEE;
+}
+
+.vertically-resizable:before {
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  margin-left: -20px;
+  width: 40px;
+  height: 8px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSI2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBpZD0iYSIgc3Ryb2tlPSIjQkJCIiBkPSJNMCAxaDEiLz48dXNlIHhsaW5rOmhyZWY9IiNhIiB5PSIyIi8+PHVzZSB4bGluazpocmVmPSIjYSIgeT0iNCIvPjwvc3ZnPg==);
+  content: "";
+}
+
+.vertically-resizable:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  content: "";
+  cursor: row-resize;
+}
+
 .cranks {
   margin: 1em 0;
 }

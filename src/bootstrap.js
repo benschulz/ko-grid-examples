@@ -11,9 +11,19 @@ define([
         es6promise.polyfill();
 
         domReady(function () {
+            var request = ko.observable('');
+            var response = ko.observable('');
+
             ko.applyBindings({
                 countriesByPopulation: countriesByPopulation,
-                unicodeCharacters: unicodeCharacters
+                unicodeCharacters: unicodeCharacters,
+
+                io: {
+                    lastRequest: request,
+                    lastResponse: response,
+                    logRequest: function (r) { request(r); },
+                    logResponse: function (r) { response(r); }
+                }
             });
         });
     }

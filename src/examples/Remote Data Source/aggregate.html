@@ -1,0 +1,42 @@
+<h1>Aggregation</h1>
+
+<p>
+    When data isn't on the client side, computing aggregates becomes tricky. In fact, when the data
+    resides remotely, the aggregate computation must happen remotely as well. Luckily the ko-grid
+    and ko-data-source architecture enable this. The "remotely" computed values can be inspected
+    by checking <em>Show Mock IO</em>.
+</p>
+
+<div data-bind="koGridExampleCranks: ['io']"></div>
+
+<h2>Example: Countries and dependencies by population</h2>
+
+<div id="remote-aggregate" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'remote-aggregate-config',
+    dataSource: countriesByPopulation.remote({ computeStatistics: true, io: io }),
+    primaryKey: 'id',
+    columns: [
+        { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
+        { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
+        { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
+        { id: 'date', width: '150px', label: 'Date' }
+    ],
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }],
+    extensions: {
+        aggregate: [
+            { population: 'sum', percentage: 'sum' },
+            { population: 'minimum' },
+            { population: 'average', percentage: 'average' },
+            { population: 'maximum' }
+        ]
+    }
+}">
+</div>
+
+<dl>
+    <dt>Source</dt>
+    <dd>
+        <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
+    </dd>
+</dl>

@@ -1,0 +1,35 @@
+<h1>Basic Functionality</h1>
+
+<p>
+    The <a href="https://github.com/benschulz/ko-grid-virtualization">virtualization extension</a> enables row
+    virtualization for the ko-grid. Virtualization is a common optimization when displaying many records, only a
+    few of which fit on the screen at one time. Only those which will be visible in the view port are added to
+    the DOM. This increases performance while reducing memory consumption. Also, when a remote data source is
+    used, it reduces the records which need to be requested from the server.
+</p>
+
+<div data-bind="koGridExampleCranks: []"></div>
+
+<h2>Example: Countries and dependencies by population</h2>
+
+<div id="virtualization-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'virtualization-basic-config',
+    dataSource: countriesByPopulation(),
+    primaryKey: 'id',
+    columns: [
+        { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
+        { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
+        { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
+        { id: 'date', width: '150px', label: 'Date' }
+    ],
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }]
+}">
+</div>
+
+<dl>
+    <dt>Source</dt>
+    <dd>
+        <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
+    </dd>
+</dl>

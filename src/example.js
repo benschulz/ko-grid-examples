@@ -128,16 +128,86 @@ define(['knockout', 'json!dist/examples/examples.json'], function (ko, examples)
             button.addEventListener('click', function () {
                 ko.contextFor(document.querySelector('.ko-grid')).grid.layout.recalculate();
             });
+        },
+        'io': function (element, valueAccessor, allBindings, viewModel) {
+            function createPre(title) {
+                var titleElement = createElement('strong', title);
+                var pre = createElement('pre');
+                var container = createElement('div', titleElement, pre);
+
+                container.style.position = 'relative';
+                container.style.display = 'inline-block';
+                container.style.boxSizing = 'border-box';
+                container.style.width = '50%';
+                container.style.height = '100%';
+                container.style.padding = '.2em';
+                pre.style.position = 'absolute';
+                pre.style.top = '1.3em';
+                pre.style.left = '.2em';
+                pre.style.right = '.2em';
+                pre.style.bottom = '0';
+
+                return container;
+            }
+
+            var request = createPre('Request');
+            var response = createPre('Response');
+            var container = createElement('div', request, response);
+            container.classList.add('vertically-resizable');
+            container.style.minHeight = '5em';
+            container.style.height = '10em';
+
+            element.parentNode.insertBefore(container, element.nextSibling);
+
+            ko.applyBindingsToNode(request.querySelector('pre'), {text: viewModel.io.lastRequest});
+            ko.applyBindingsToNode(response.querySelector('pre'), {text: viewModel.io.lastResponse});
+
+            var checkbox = createElement('input');
+            checkbox.type = 'checkbox';
+
+            var label = createElement('label', checkbox, ' Show Mock IO');
+
+            element.appendChild(label);
+
+            var updateIoVisibility = function () { container.style.display = checkbox.checked ? '' : 'none'; };
+            checkbox.addEventListener('change', updateIoVisibility);
+            updateIoVisibility();
         }
     };
 
     ko.bindingHandlers.koGridExampleCranks = {
-        init: function (element, valueAccessor) {
+        init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
             element.classList.add('cranks');
             valueAccessor().forEach(function (crank) {
-                cranks[crank](element);
-            })
+                cranks[crank](element, valueAccessor, allBindings, viewModel, bindingContext);
+            });
         },
         update: function () {}
     };
+
+    document.addEventListener('mousedown', function (e) {
+        if (!e.target.classList.contains('vertically-resizable'))
+            return;
+
+        var element = e.target;
+        var initialHeight = element.clientHeight;
+        var initialMousePosition = e.pageY;
+        var animationFrameRequest = 0;
+
+        function onMouseMove(e2) {
+            if (animationFrameRequest)
+                window.cancelAnimationFrame(animationFrameRequest);
+            animationFrameRequest = window.requestAnimationFrame(function () {
+                element.style.height = (initialHeight + e2.pageY - initialMousePosition) + 'px';
+            });
+        }
+
+        function onMouseUp() {
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+        }
+
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+    });
 });
