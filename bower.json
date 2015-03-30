@@ -11,7 +11,7 @@
     "url": "http://github.com/benschulz/ko-grid-examples.git"
   },
   "dependencies": {
-    "knockout": "^3.2.0",
+    "knockout": "^3.3.0",
     "ko-grid-bundle": "benschulz/ko-grid-bundle",
     "requirejs": "^2.1.16",
     "moment": "^2.0.0",
