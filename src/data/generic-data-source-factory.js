@@ -1,6 +1,13 @@
 'use strict';
 
 define(['knockout', 'ko-data-source', 'stringifyable'], function (ko, dataSource, stringifyable) {
+    var stringifyReplacer = function (key, value) {
+        if (value === Number.POSITIVE_INFINITY)
+            return 'Number.POSITIVE_INFINITY';
+
+        return stringifyable.stringifyReplacer(key, value);
+    };
+
     return function (args) {
         var entriesPromiser = args.entries;
         var idProperty = args.id || 'id';
@@ -38,14 +45,14 @@ define(['knockout', 'ko-data-source', 'stringifyable'], function (ko, dataSource
                 };
 
             var observables = new dataSource.ObservableEntries(idSelector, observableStateTransitioner);
-            return new dataSource.ServerSideDataSource(idSelector, observables, {
+            var querier = {
                 issue: function (query) {
                     io.logRequest(JSON.stringify({
                         predicate: query.predicate,
                         comparator: query.comparator,
                         offset: query.offset,
                         limit: query.limit,
-                    }, stringifyable.stringifyReplacer, '  '));
+                    }, stringifyReplacer, '  '));
 
                     return new Promise(function (resolve) {
                         window.setTimeout(function () {
@@ -77,14 +84,15 @@ define(['knockout', 'ko-data-source', 'stringifyable'], function (ko, dataSource
                                 result.statistics = statistics;
                             }
 
-                            io.logResponse(JSON.stringify(result, stringifyable.stringifyReplacer, '  '));
+                            io.logResponse(JSON.stringify(result, stringifyReplacer, '  '));
 
                             result.values = dataSource.streams.streamArray(clipped);
                             resolve(result);
                         }, options.latency || 500);
                     });
                 }
-            });
+            };
+            return new dataSource.ServerSideDataSource(idSelector, querier, observables);
         };
 
         return clientSideDatSourceFactory;
