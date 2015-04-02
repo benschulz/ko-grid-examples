@@ -7,7 +7,7 @@ require.config({
   "moment": "bower_components/moment/moment",
   "es6-promise": "bower_components/es6-promise/promise.min",
   "knockout": "bower_components/knockout/dist/knockout",
-  "ko-grid-bundle": "bower_components/ko-grid-bundle/dist/ko-grid-bundle.debug",
+  "ko-grid-bundle": "bower_components/ko-grid-bundle/dist/ko-grid-bundle",
   "ko-grid": "empty:",
   "ko-data-source": "empty:",
   "stringifyable": "bower_components/stringifyable/dist/stringifyable"
@@ -140,6 +140,11 @@ require.config({
     "main": "indexed-list"
   },
   {
+    "name": "stringifyable",
+    "location": "bower_components/ko-grid-bundle/bower_components/stringifyable/src",
+    "main": "internal"
+  },
+  {
     "name": "ko-data-source",
     "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-virtualization/bower_components/ko-data-source/src",
     "main": "ko-data-source"
@@ -147,11 +152,6 @@ require.config({
   {
     "name": "onefold-dom",
     "location": "bower_components/ko-grid-bundle/bower_components/onefold-dom/src",
-    "main": "internal"
-  },
-  {
-    "name": "stringifyable",
-    "location": "bower_components/ko-grid-bundle/bower_components/stringifyable/src",
     "main": "internal"
   },
   {
