@@ -11,11 +11,11 @@ define(['knockout', 'ko-data-source', 'stringifyable'], function (ko, dataSource
     return function (args) {
         var entriesPromiser = args.entries;
         var idProperty = args.id || 'id';
-        var observableProperties = args.properties;
+        var observableProperties = args.observableProperties;
         var numericProperties = args.numericProperties || [];
 
         var idSelector = function (e) { return e[idProperty]; };
-        var observableStateTransitioner = new (dataSource.DefaultObservableStateTransitioner.bind.apply(dataSource.DefaultObservableStateTransitioner, observableProperties));
+        var observableStateTransitioner = new dataSource.DefaultObservableStateTransitioner({observableProperties: observableProperties});
 
         var clientSideDatSourceFactory = function () {
             var observables = new dataSource.ObservableEntries(idSelector, observableStateTransitioner);

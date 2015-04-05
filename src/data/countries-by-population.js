@@ -13,7 +13,7 @@ define(['./generic-data-source-factory', './data-promiser'], function (genericDa
                 percentage: e.percentage
             };
         }),
-        properties: ['id', 'rank', 'country', 'country', 'countryArticle', 'population', 'date', 'percentage'],
+        observableProperties: ['rank', 'country', 'country', 'countryArticle', 'population', 'date', 'percentage'],
         numericProperties: ['rank', 'population', 'percentage']
     });
 });
