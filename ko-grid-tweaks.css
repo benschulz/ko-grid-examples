@@ -13,4 +13,5 @@
 }
 .content-width.grid {
   display: inline-block;
+  max-width: 100%;
 }

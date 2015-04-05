@@ -6,8 +6,8 @@ require.config({
   "domReady": "node_modules/domReady/domReady",
   "moment": "bower_components/moment/moment",
   "es6-promise": "bower_components/es6-promise/promise.min",
-  "knockout": "bower_components/knockout/dist/knockout",
-  "ko-grid-bundle": "bower_components/ko-grid-bundle/dist/ko-grid-bundle",
+  "knockout": "bower_components/knockout/dist/knockout.debug",
+  "ko-grid-bundle": "bower_components/ko-grid-bundle/dist/ko-grid-bundle.debug",
   "ko-grid": "empty:",
   "ko-data-source": "empty:",
   "stringifyable": "bower_components/stringifyable/dist/stringifyable"
@@ -48,6 +48,11 @@ require.config({
     "name": "default-config",
     "location": "src/configs",
     "main": "default-config"
+  },
+  {
+    "name": "editing-basic-config",
+    "location": "src/configs",
+    "main": "editing-basic-config"
   },
   {
     "name": "export-basic-config",
@@ -170,6 +175,11 @@ require.config({
     "main": "aggregate"
   },
   {
+    "name": "ko-grid-cell-navigation",
+    "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-editing/bower_components/ko-grid-cell-navigation/src",
+    "main": "cell-navigation"
+  },
+  {
     "name": "ko-grid-column-sizing",
     "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-column-width-persistence/bower_components/ko-grid-column-sizing/src",
     "main": "column-sizing"
@@ -198,6 +208,11 @@ require.config({
     "name": "ko-grid-column-width-persistence",
     "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-column-width-persistence/src",
     "main": "column-width-persistence"
+  },
+  {
+    "name": "ko-grid-editing",
+    "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-editing/src",
+    "main": "editing"
   },
   {
     "name": "ko-grid-export",

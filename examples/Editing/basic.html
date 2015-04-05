@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Basic Functionality &mdash; Editing &mdash; Examples &mdash; ko-grid</title>
+    <script type="text/javascript" src="../../require.js"></script>
+    <script type="text/javascript" src="../../ko-grid-examples.js"></script>
+    <link rel="stylesheet" href="../../ko-grid-examples.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-tweaks.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
+</head>
+<body data-bind="koGridExample: '../../'">
+<h1>Basic Functionality</h1>
+
+<p>
+    In the "Web 2.0" world editing is an essential feature of any grid component. The ko-grid supports editing via the
+    <a href="https://github.com/benschulz/ko-grid-editing">editing extension</a>. To try it out, select a cell and start
+    typing.
+</p>
+
+<p class="info">
+    <strong>Note</strong>: You have full control over the editor and how changes are saved.
+</p>
+
+<p class="info">
+    <strong>Note</strong>: This is the very first iteration of editing support. If you have suggestions for improvements,
+    feel free to file a feature request.
+</p>
+
+<div data-bind="koGridExampleCranks: []"></div>
+
+<h2>Example: Countries and dependencies by population</h2>
+
+<div id="editing-basic" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'editing-basic-config',
+    dataSource: countriesByPopulation(),
+    primaryKey: 'id',
+    columns: [
+        { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
+        { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
+        { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
+        { id: 'date', width: '150px', label: 'Date' }
+    ],
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }]
+}">
+</div>
+
+<dl>
+    <dt>Source</dt>
+    <dd>
+        <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
+    </dd>
+</dl>
+
+</body>
+</html>

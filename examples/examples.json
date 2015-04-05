@@ -65,6 +65,15 @@
     ]
   },
   {
+    "title": "Editing",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      }
+    ]
+  },
+  {
     "title": "Virtualization",
     "elements": [
       {
