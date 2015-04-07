@@ -65,6 +65,19 @@
     ]
   },
   {
+    "title": "Selection",
+    "elements": [
+      {
+        "title": "Single-Selection",
+        "filename": "single.html"
+      },
+      {
+        "title": "Multi-Selection",
+        "filename": "multi.html"
+      }
+    ]
+  },
+  {
     "title": "Editing",
     "elements": [
       {

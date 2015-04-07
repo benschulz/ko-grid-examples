@@ -6,8 +6,8 @@ require.config({
   "domReady": "node_modules/domReady/domReady",
   "moment": "bower_components/moment/moment",
   "es6-promise": "bower_components/es6-promise/promise.min",
-  "knockout": "bower_components/knockout/dist/knockout.debug",
-  "ko-grid-bundle": "bower_components/ko-grid-bundle/dist/ko-grid-bundle.debug",
+  "knockout": "bower_components/knockout/dist/knockout",
+  "ko-grid-bundle": "bower_components/ko-grid-bundle/dist/ko-grid-bundle",
   "ko-grid": "empty:",
   "ko-data-source": "empty:",
   "stringifyable": "bower_components/stringifyable/dist/stringifyable"
@@ -108,6 +108,16 @@ require.config({
     "name": "remote-virtualization-config",
     "location": "src/configs",
     "main": "remote-virtualization-config"
+  },
+  {
+    "name": "selection-multi-config",
+    "location": "src/configs",
+    "main": "selection-multi-config"
+  },
+  {
+    "name": "selection-single-config",
+    "location": "src/configs",
+    "main": "selection-single-config"
   },
   {
     "name": "sorting-basic-config",
@@ -238,6 +248,11 @@ require.config({
     "name": "ko-grid-resize-detection",
     "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-resize-detection/src",
     "main": "resize-detection"
+  },
+  {
+    "name": "ko-grid-selection",
+    "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-selection/src",
+    "main": "selection"
   },
   {
     "name": "ko-grid-sorting",
