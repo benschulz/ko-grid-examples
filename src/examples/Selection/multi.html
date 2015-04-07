@@ -1,0 +1,36 @@
+<h1>Multi-Selection</h1>
+
+<p>
+    Multi-selection is enabled by switching the configuration option <code>allowMultiSelection</code> to <code>true</code>.
+</p>
+
+<p class="info">
+    Checking the checkbox in the left-most column header selects all rows matching the current filter. If the filter is
+    changed later, the selection is <em>not</em> affected.
+</p>
+
+<div data-bind="koGridExampleCranks: []"></div>
+
+<h2>Example: Countries and dependencies by population</h2>
+
+<div id="selection-multi" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'selection-multi-config',
+    dataSource: countriesByPopulation(),
+    primaryKey: 'id',
+    columns: [
+        { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
+        { id: 'country', width: '400px', label: 'Country (or dependent territory)' },
+        { id: 'population', width: '150px', label: 'Population', classes: ['numeric'] },
+        { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
+        { id: 'date', width: '150px', label: 'Date' }
+    ],
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }]
+}">
+</div>
+
+<dl>
+    <dt>Source</dt>
+    <dd>
+        <a href="http://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population#Countries_and_dependencies_by_population">Wikipedia</a>
+    </dd>
+</dl>
