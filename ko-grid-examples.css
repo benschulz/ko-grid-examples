@@ -558,6 +558,33 @@ dd {
   content: "\f026";
   color: #8C0000;
 }
+.person {
+  position: relative;
+  margin: 1em 1.5em;
+}
+.person > .identifying-information {
+  font-size: 1.5em;
+  margin: .5em 0 .5em 95px;
+}
+.person > .portrait {
+  position: absolute;
+  top: 60%;
+  margin-top: -40px;
+  border-radius: 50%;
+  user-select: none;
+}
+.person > label.email,
+.person > label.phone {
+  display: block;
+  margin: .5em 0 .5em 95px;
+  width: 24em;
+  text-align: right;
+}
+.person > label.email > input,
+.person > label.phone > input {
+  margin-left: .3em;
+  width: 20em;
+}
 
 atom-text-editor,
 :host {

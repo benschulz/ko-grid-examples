@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Master-Detail &mdash; Selection &mdash; Examples &mdash; ko-grid</title>
+    <script type="text/javascript" src="../../require.js"></script>
+    <script type="text/javascript" src="../../ko-grid-examples.js"></script>
+    <link rel="stylesheet" href="../../ko-grid-examples.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-tweaks.css">
+    <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
+</head>
+<body data-bind="koGridExample: '../../'">
+<h1>Master-Detail</h1>
+
+<p>
+    This is a demonstration of the <a href="http://en.wikipedia.org/wiki/Master%E2%80%93detail_interface">master-detail UI pattern</a>.
+    When you select an entry, its details will appear below the table. Changing the selection will change the details.
+</p>
+
+<div data-bind="koGridExampleCranks: []"></div>
+
+<div data-bind="with: { dataSource: people(), selection: ko.observable() }">
+
+    <div id="selection-master-detail" class="fixed-height content-width grid" style="height: 300px" data-bind="grid: {
+        config: 'selection-master-detail-config',
+        dataSource: dataSource,
+        primaryKey: 'id',
+        columns: [
+            { id: 'firstName', width: '120px', label: 'First Name' },
+            { id: 'lastName', width: '120px', label: 'Last Name' },
+            { id: 'birthday', width: '175px', label: 'Birthday' },
+            { id: 'email', width: '300px', label: 'E-Mail' },
+            { id: 'phone', width: '175px', label: 'Phone' }
+        ],
+        columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }],
+        extensions: {
+            selection: { selectedEntryId: selection }
+        }
+    }">
+    </div>
+
+    <div class="person" data-bind="entry: selection(), from: dataSource, as: 'person'">
+        <img class="portrait" data-bind="attr: { src: person().pictures.thumbnail }">
+
+        <div class="identifying-information">
+            <strong data-bind="text: person().firstName() + ' ' + person().lastName()"></strong>,
+            born <span data-bind="text: person().birthday().toLocaleDateString()"></span>
+        </div>
+
+        <label class="email">E-Mail <input type="text" data-bind="value: person().email, valueUpdate: ['input']"></label>
+        <label class="phone">Phone <input type="text" data-bind="value: person().phone, valueUpdate: ['input']"></label>
+    </div>
+
+</div>
+
+</body>
+</html>

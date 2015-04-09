@@ -110,6 +110,11 @@ require.config({
     "main": "remote-virtualization-config"
   },
   {
+    "name": "selection-master-detail-config",
+    "location": "src/configs",
+    "main": "selection-master-detail-config"
+  },
+  {
     "name": "selection-multi-config",
     "location": "src/configs",
     "main": "selection-multi-config"
@@ -163,6 +168,11 @@ require.config({
     "name": "ko-data-source",
     "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-virtualization/bower_components/ko-data-source/src",
     "main": "ko-data-source"
+  },
+  {
+    "name": "ko-entry",
+    "location": "bower_components/ko-grid-bundle/bower_components/ko-entry/src",
+    "main": "binding"
   },
   {
     "name": "onefold-dom",

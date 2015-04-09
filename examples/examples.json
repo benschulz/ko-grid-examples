@@ -74,6 +74,10 @@
       {
         "title": "Multi-Selection",
         "filename": "multi.html"
+      },
+      {
+        "title": "Master-Detail",
+        "filename": "master-detail.html"
       }
     ]
   },
