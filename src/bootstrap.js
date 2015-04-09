@@ -3,11 +3,12 @@ define([
         'es6-promise',
         'knockout',
         './data/countries-by-population',
+        './data/people',
         './data/unicode-characters',
         './example',
         'ko-grid-bundle'
     ],
-    function (domReady, es6promise, ko, countriesByPopulation, unicodeCharacters) {
+    function (domReady, es6promise, ko, countriesByPopulation, people, unicodeCharacters) {
         es6promise.polyfill();
 
         domReady(function () {
@@ -16,6 +17,7 @@ define([
 
             ko.applyBindings({
                 countriesByPopulation: countriesByPopulation,
+                people: people,
                 unicodeCharacters: unicodeCharacters,
 
                 io: {

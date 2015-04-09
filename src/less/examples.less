@@ -210,3 +210,33 @@ dd {
   color: #8C0000;
 }
 
+.person {
+  position: relative;
+  margin: 1em 1.5em;
+
+  > .identifying-information {
+    font-size: 1.5em;
+    margin: .5em 0 .5em 95px;
+  }
+
+  > .portrait {
+    position: absolute;
+    top: 60%;
+    margin-top: -40px;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  > label.email, > label.phone {
+    display: block;
+    margin: .5em 0 .5em 95px;
+    width: 24em;
+    text-align: right;
+
+    > input {
+      margin-left: .3em;
+      width: 20em;
+    }
+  }
+}
+
