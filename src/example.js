@@ -189,6 +189,8 @@ define(['knockout', 'json!dist/examples/examples.json'], function (ko, examples)
         if (!e.target.classList.contains('vertically-resizable'))
             return;
 
+        e.preventDefault();
+
         var element = e.target;
         var initialHeight = element.clientHeight;
         var initialMousePosition = e.pageY;
