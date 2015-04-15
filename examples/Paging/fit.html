@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Aggregation &mdash; Remote Data Source &mdash; Examples &mdash; ko-grid</title>
+    <title>Fit-Rows &mdash; Paging &mdash; Examples &mdash; ko-grid</title>
     <script type="text/javascript" src="../../require.js"></script>
     <script type="text/javascript" src="../../rjsconfig.js"></script>
     <link rel="stylesheet" href="../../ko-grid-examples.css">
@@ -10,22 +10,25 @@
     <link class="ko-grid-styles" rel="stylesheet" href="../../ko-grid-bundle.css">
 </head>
 <body data-bind="koGridExample: '../../'">
-<h1>Aggregation</h1>
+<h1>Fit-Rows</h1>
 
 <p>
-    When data isn't on the client side, computing aggregates becomes tricky. In fact, when the data
-    resides remotely, the aggregate computation must happen remotely as well. Luckily the ko-grid
-    and ko-data-source architecture enable this. The "remotely" computed values can be inspected
-    by checking <em>Show Mock IO</em>.
+    If the desired page size is set to <code><span class="source js"><span class="string quoted single js"><span class="punctuation definition string begin js"><span>&#39;</span></span><span>fit</span><span class="punctuation definition string end js"><span>&#39;</span></span></span></span></code>, the paging extension will try to calculate
+    the page size on the fly to fit as many rows as possible.
 </p>
 
-<div data-bind="koGridExampleCranks: ['io']"></div>
+<p class="info">
+    You can resize the grid by the grip underneath. This functionality is provided by the
+    <a href="https://github.com/benschulz/ko-grid-height-adjuster">height adjuster extension</a>.
+</p>
+
+<div data-bind="koGridExampleCranks: []"></div>
 
 <h2>Example: Countries and dependencies by population</h2>
 
-<div id="remote-aggregate" class="fixed-height content-width grid" data-bind="grid: {
-    config: 'remote-aggregate-config',
-    dataSource: countriesByPopulation.remote({ computeStatistics: true, io: io }),
+<div id="paging-fit" class="fixed-height content-width grid" data-bind="grid: {
+    config: 'paging-fit-config',
+    dataSource: countriesByPopulation(),
     primaryKey: 'id',
     columns: [
         { id: 'rank', width: '50px', label: 'Rank', classes: ['numeric'] },
@@ -34,15 +37,7 @@
         { id: 'percentage', width: '120px', label: '% of world population', classes: ['numeric'] },
         { id: 'date', width: '150px', label: 'Date' }
     ],
-    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }],
-    extensions: {
-        aggregate: [
-            { population: 'sum', percentage: 'sum' },
-            { population: 'minimum' },
-            { population: 'average', percentage: 'average' },
-            { population: 'maximum' }
-        ]
-    }
+    columnGroups: [{ label: 'Census', elements: [ 'population', 'percentage' ] }]
 }">
 </div>
 

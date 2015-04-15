@@ -91,6 +91,19 @@
     ]
   },
   {
+    "title": "Paging",
+    "elements": [
+      {
+        "title": "Basic Functionality",
+        "filename": "basic.html"
+      },
+      {
+        "title": "Fit-Rows",
+        "filename": "fit.html"
+      }
+    ]
+  },
+  {
     "title": "Virtualization",
     "elements": [
       {

@@ -95,6 +95,16 @@ require.config({
     "main": "links-basic-config"
   },
   {
+    "name": "paging-basic-config",
+    "location": "src/configs",
+    "main": "paging-basic-config"
+  },
+  {
+    "name": "paging-fit-config",
+    "location": "src/configs",
+    "main": "paging-fit-config"
+  },
+  {
     "name": "remote-aggregate-config",
     "location": "src/configs",
     "main": "remote-aggregate-config"
@@ -248,6 +258,16 @@ require.config({
     "name": "ko-grid-full-screen",
     "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-full-screen/src",
     "main": "full-screen"
+  },
+  {
+    "name": "ko-grid-paging",
+    "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-paging/src",
+    "main": "paging"
+  },
+  {
+    "name": "ko-grid-height-adjuster",
+    "location": "bower_components/ko-grid-bundle/bower_components/ko-grid-height-adjuster/src",
+    "main": "height-adjuster"
   },
   {
     "name": "ko-grid-links",
