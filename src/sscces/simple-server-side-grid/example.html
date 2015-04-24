@@ -7,8 +7,11 @@
     <script type="text/javascript" src="../knockout.js"></script>
     <script type="text/javascript" src="../ko-grid-bundle.js"></script>
     <link rel="stylesheet" href="../ko-grid-bundle.css">
+    <link rel="stylesheet" href="../normalize.css">
 </head>
-<div id="no-requirejs" style="display: inline-block;" data-bind="grid: {
+
+<main style="padding: 1em;">
+    <div id="no-requirejs" style="display: inline-block;" data-bind="grid: {
     config: 'example-config',
     dataSource: people,
     primaryKey: 'id',
@@ -18,7 +21,8 @@
         { id: 'email', width: '250px', label: 'E-Mail' }
     ]
 }">
-</div>
+    </div>
+</main>
 
 <script type="text/javascript">
     (function () {
