@@ -41,7 +41,7 @@ define(['knockout', 'ko-data-source', 'stringifyable'], function (ko, dataSource
                         predicate: query.predicate,
                         comparator: query.comparator,
                         offset: query.offset,
-                        limit: query.limit,
+                        limit: query.limit
                     }, stringifyReplacer, '  '));
 
                     return args.entries().then(function (entries) {

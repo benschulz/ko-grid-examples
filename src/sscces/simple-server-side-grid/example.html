@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple Grid (Server-Side Data)</title>
+
+    <script type="text/javascript" src="../knockout.js"></script>
+    <script type="text/javascript" src="../ko-grid-bundle.js"></script>
+    <link rel="stylesheet" href="../ko-grid-bundle.css">
+</head>
+<div id="no-requirejs" style="display: inline-block;" data-bind="grid: {
+    config: 'example-config',
+    dataSource: people,
+    primaryKey: 'id',
+    columns: [
+        { id: 'name', width: '150px', label: 'Name' },
+        { id: 'age', width: '70px', label: 'Age' },
+        { id: 'email', width: '250px', label: 'E-Mail' }
+    ]
+}">
+</div>
+
+<script type="text/javascript">
+    (function () {
+        // When *not* using RequireJS grid configs need to be registered here.
+        window.ko.bindingHandlers.grid.config = {};
+        window.ko.bindingHandlers.grid.config['example-config'] = {
+            extensions: {
+                filtering: {},
+                sorting: {}
+            }
+        };
+
+        var bundle = window['ko-grid-bundle'];
+
+        // A function to get a string uniquely identifying data source entries.
+        var idSelector = function (e) { return e.id; };
+
+        var entries = [
+            {id: 'alice', name: 'Alice', age: 26, email: 'alice@example.org'},
+            {id: 'bob', name: 'Bob', age: 32, email: 'bob@example.org'},
+            {id: 'carol', name: 'Carol', age: 44, email: 'carol@example.org'},
+            {id: 'dan', name: 'Dan', age: 19, email: 'dan@example.org'},
+            {id: 'emma', name: 'Emma', age: 25, email: 'emma@example.org'},
+            {id: 'felix', name: 'Felix', age: 34, email: 'felix@example.org'}
+
+        ];
+
+        function stringifyReplacer(key, value) {
+            return typeof value === 'function' || typeof value === 'object'
+                    ? value.stringifyable || value
+                    : value;
+        }
+
+        // This object is responsible for fetching data from the server.
+        var querier = {
+            issue: function (query) {
+                // This is how a request might be stringified and sent to the server.
+                window.console.log('Request: ' + JSON.stringify({
+                    predicate: query.predicate,
+                    comparator: query.comparator,
+                    offset: query.offset,
+                    limit: query.limit,
+                }, stringifyReplacer, '  '));
+
+                return new Promise(function (resolve) {
+                    // Delay the result to emulate request and its latency.
+                    window.setTimeout(function () {
+                        var matching = entries.filter(query.predicate);
+                        matching.sort(query.comparator);
+                        var clipped = matching.slice(query.offset, query.offset + query.limit);
+
+                        resolve({
+                            unfilteredSize: entries.length,
+                            filteredSize: matching.length,
+                            values: bundle.dataSource.streams.streamArray(clipped)
+                        });
+                    }, 500);
+                });
+            }
+        };
+
+        var dataSource = new bundle.dataSource.ServerSideDataSource(idSelector, querier);
+
+        ko.applyBindings({
+            people: dataSource
+        });
+    })();
+</script>
+
+</body>
+</html>

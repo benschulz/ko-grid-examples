@@ -230,6 +230,12 @@ module.exports = function (grunt) {
                 flatten: true,
                 src: ['src/data/**/*.json'],
                 dest: 'dist/data/'
+            },
+            sscces: {
+                expand: true,
+                cwd: 'src',
+                src: 'sscces/**/*',
+                dest: 'dist'
             }
         },
         less: {
