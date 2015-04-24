@@ -342,7 +342,7 @@ define('ko-grid-examples/data/generic-data-source-factory',['knockout', 'ko-data
                         predicate: query.predicate,
                         comparator: query.comparator,
                         offset: query.offset,
-                        limit: query.limit,
+                        limit: query.limit
                     }, stringifyReplacer, '  '));
 
                     return args.entries().then(function (entries) {
